@@ -1,6 +1,6 @@
 {
-  "commit": "52c96cc2e23bfaf89de7cb999186eff7068df89c",
-  "generated": "Sat, 25 May 2024 16:00:13 GMT",
+  "commit": "b603673349f5344feb737ab88926e19c7b1da469",
+  "generated": "2024-05-25T16:44:55.866Z",
   "metadata": [
     {
       "__outstatic": {
@@ -22,9 +22,9 @@
     },
     {
       "__outstatic": {
-        "commit": "ea866ef470dac90bf9974a836de37c19b7debc09",
-        "hash": "2377681418",
-        "path": "outstatic/content/pages/le-contenu-de-la-page-principal-peut-etre-edite-ici.md"
+        "commit": "b603673349f5344feb737ab88926e19c7b1da469",
+        "hash": "3351376377",
+        "path": "outstatic/content/pages/accueil.md"
       },
       "author": {
         "name": "Antoine Chartier",
@@ -34,7 +34,7 @@
       "coverImage": "",
       "description": "",
       "publishedAt": "2024-05-25T15:22:07.342Z",
-      "slug": "le-contenu-de-la-page-principal-peut-etre-edite-ici",
+      "slug": "accueil",
       "status": "published",
       "title": "Accueil"
     }

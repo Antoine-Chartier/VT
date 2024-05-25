@@ -4,7 +4,7 @@ status: 'published'
 author:
   name: 'Antoine Chartier'
   picture: 'https://avatars.githubusercontent.com/u/121460528?v=4'
-slug: 'le-contenu-de-la-page-principal-peut-etre-edite-ici'
+slug: 'accueil'
 description: ''
 coverImage: ''
 publishedAt: '2024-05-25T15:22:07.342Z'
