@@ -1,0 +1,42 @@
+{
+  "commit": "52c96cc2e23bfaf89de7cb999186eff7068df89c",
+  "generated": "Sat, 25 May 2024 16:00:09 GMT",
+  "metadata": [
+    {
+      "__outstatic": {
+        "commit": "ea866ef470dac90bf9974a836de37c19b7debc09",
+        "hash": "2377681418",
+        "path": "outstatic/content/pages/le-contenu-de-la-page-principal-peut-etre-edite-ici.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-25T15:22:07.342Z",
+      "slug": "le-contenu-de-la-page-principal-peut-etre-edite-ici",
+      "status": "published",
+      "title": "Accueil"
+    },
+    {
+      "__outstatic": {
+        "commit": "7ef146262f07feba2d6de4864de4d8ccb55f6237",
+        "hash": "8263312",
+        "path": "outstatic/content/tests/test-pas-tony.md"
+      },
+      "author": {
+        "name": "Tony Benette",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "tests",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-25T15:25:32.142Z",
+      "slug": "test-pas-tony",
+      "status": "draft",
+      "title": "Test pas tony"
+    }
+  ]
+}
