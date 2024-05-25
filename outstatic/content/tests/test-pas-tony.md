@@ -1,6 +1,6 @@
 ---
 title: 'Test pas tony'
-status: 'draft'
+status: 'published'
 author:
   name: 'Tony Benette'
   picture: 'https://avatars.githubusercontent.com/u/121460528?v=4'
