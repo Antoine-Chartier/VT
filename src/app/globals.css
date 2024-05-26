@@ -26,6 +26,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+@layer components {
+  .active {
+    @apply text-white/70
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
