@@ -11,20 +11,16 @@ export default function Nav() {
     <nav className={'flex justify-center p-10'}>
       <ul className={'flex gap-10'}>
         <li>
-          <Image
-            src="/logo.png"
-            alt="Logo"
-            width={50}
-            height={50}
-          />
+          <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
+            <Image
+              src="/logo-fondGrisTopResolution.webp"
+              alt="Logo"
+              width={500}
+              height={500}
+            />
+          </Link>
+
         </li>
-        {pathname !== '/' && (
-          <li>
-            <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
-              Accueil
-            </Link>
-          </li>
-        )}
         <li>
           <Link
             className={`link ${pathname === '/services' ? 'active' : ''}`}
