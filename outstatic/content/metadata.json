@@ -1,6 +1,6 @@
 {
-  "commit": "2d484f07c09f780d0513a149926fb3ca8111ddca",
-  "generated": "2024-05-25T17:14:58.993Z",
+  "commit": "fc1d82aea72bd11cb6411efbebe050662c1529b9",
+  "generated": "2024-05-26T01:45:40.001Z",
   "metadata": [
     {
       "__outstatic": {
@@ -55,6 +55,24 @@
       "slug": "contact",
       "status": "published",
       "title": "Contact"
+    },
+    {
+      "__outstatic": {
+        "commit": "fc1d82aea72bd11cb6411efbebe050662c1529b9",
+        "hash": "4292053232",
+        "path": "outstatic/content/articles/les-bon-massages.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-26T01:21:04.535Z",
+      "slug": "les-bon-massages",
+      "status": "published",
+      "title": "Les bon massages"
     }
   ]
 }
