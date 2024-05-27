@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Nav from "../components/client/Nav";
 import Footer from "../components/Footer";
-import { inter, josefin_slab } from "../libs/fonts";
 import Layout from "../components/Layout";
 
 const Home = () => {
