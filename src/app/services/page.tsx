@@ -1,22 +1,24 @@
+import Layout from "../../components/Layout";
 import { Metadata } from "next";
 import Head from "next/head";
-import Nav from "../components/client/Nav";
-import Footer from "../components/Footer";
+import Nav from "../../components/client/Nav";
+import Footer from "../../components/Footer";
+import { inter, josefin_slab } from "../../libs/fonts";
 
 export const metadata: Metadata = {
-  title: "VT - Services",
+  title: "Services",
   description: "Les services de Viva Tremblant",
 };
 
 const Services = () => {
   return (
-    <>
-    <Nav />
-    <main className="flex-grow items-center justify-between p-24">
-      <div>nos services</div>
-    </main>
-    <Footer />
-    </>
+    <Layout>
+      <Nav />
+      <main className="flex-grow items-center justify-between p-24">
+        <div>nos services</div>
+      </main>
+      <Footer />
+    </Layout>
   );    
 }
 
