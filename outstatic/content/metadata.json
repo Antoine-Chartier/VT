@@ -1,6 +1,6 @@
 {
-  "commit": "fc1d82aea72bd11cb6411efbebe050662c1529b9",
-  "generated": "2024-05-26T01:45:40.001Z",
+  "commit": "a3b71b403dfaeb10a56720c03259b6ccdbf9216c",
+  "generated": "2024-05-27T16:23:29.362Z",
   "metadata": [
     {
       "__outstatic": {
@@ -73,6 +73,24 @@
       "slug": "les-bon-massages",
       "status": "published",
       "title": "Les bon massages"
+    },
+    {
+      "__outstatic": {
+        "commit": "a3b71b403dfaeb10a56720c03259b6ccdbf9216c",
+        "hash": "3873917497",
+        "path": "outstatic/content/articles/article1.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-27T15:59:08.649Z",
+      "slug": "article1",
+      "status": "published",
+      "title": "Un article"
     }
   ]
 }
