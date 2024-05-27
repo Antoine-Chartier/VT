@@ -1,7 +1,79 @@
 {
-  "commit": "1b1660a776553c3336b60e665d03e08ab2ca0f6d",
-  "generated": "2024-05-27T19:09:29.833Z",
+  "commit": "ae27ff0ba630b273ec3ffcf8bed049c6eecf34d8",
+  "generated": "Mon, 27 May 2024 19:18:46 GMT",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "cb58d2dfbc36ed2d9032f03176ea850f532c739d",
+        "hash": "3873917497",
+        "path": "outstatic/content/articles/article1.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-27T15:59:08.649Z",
+      "slug": "article1",
+      "status": "published",
+      "title": "Un article"
+    },
+    {
+      "__outstatic": {
+        "commit": "605f8d03c31168d103c389ed1a495fdb7e2e4ca9",
+        "hash": "595588663",
+        "path": "outstatic/content/articles/nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir.md"
+      },
+      "author": {
+        "name": "Antoine Chartier -chatgpt",
+        "picture": ""
+      },
+      "collection": "articles",
+      "coverImage": "/images/article-visa-mexicain-cover-image-U1OT.jpg",
+      "description": "Découvrez les nouvelles exigences de visa pour les Mexicains voyageant au Canada, mises en place en 2024. Apprenez comment ces changements peuvent affecter le tourisme et simplifier votre prochaine visite au Canada. Pour plus d'informations, consultez notre article détaillé.",
+      "publishedAt": "2024-05-27T18:38:43.320Z",
+      "slug": "nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir",
+      "status": "published",
+      "title": "Nouvelles Lois sur les Visas Touristiques pour le Canada : Ce que les Mexicains Doivent Savoir"
+    },
+    {
+      "__outstatic": {
+        "commit": "6ec7bc7058ae71ba388cb2caeb6bde38eed9fbf4",
+        "hash": "3474722024",
+        "path": "outstatic/content/pages/contact.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "pages",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-25T16:50:42.152Z",
+      "slug": "contact",
+      "status": "published",
+      "title": "Contact"
+    },
+    {
+      "__outstatic": {
+        "commit": "c211a51b33b533e4df8fd0466968d7305e42f64e",
+        "hash": "4292053232",
+        "path": "outstatic/content/articles/les-bon-massages.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-26T01:21:04.535Z",
+      "slug": "les-bon-massages",
+      "status": "published",
+      "title": "Les bon massages"
+    },
     {
       "__outstatic": {
         "commit": "7ef146262f07feba2d6de4864de4d8ccb55f6237",
@@ -22,7 +94,7 @@
     },
     {
       "__outstatic": {
-        "commit": "b603673349f5344feb737ab88926e19c7b1da469",
+        "commit": "0e951f20092244bde1ba687d0f8fe41751b5f076",
         "hash": "3351376377",
         "path": "outstatic/content/pages/accueil.md"
       },
@@ -37,78 +109,6 @@
       "slug": "accueil",
       "status": "published",
       "title": "Accueil"
-    },
-    {
-      "__outstatic": {
-        "commit": "2d484f07c09f780d0513a149926fb3ca8111ddca",
-        "hash": "3474722024",
-        "path": "outstatic/content/pages/contact.md"
-      },
-      "author": {
-        "name": "Antoine Chartier",
-        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
-      },
-      "collection": "pages",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-05-25T16:50:42.152Z",
-      "slug": "contact",
-      "status": "published",
-      "title": "Contact"
-    },
-    {
-      "__outstatic": {
-        "commit": "fc1d82aea72bd11cb6411efbebe050662c1529b9",
-        "hash": "4292053232",
-        "path": "outstatic/content/articles/les-bon-massages.md"
-      },
-      "author": {
-        "name": "Antoine Chartier",
-        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
-      },
-      "collection": "articles",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-05-26T01:21:04.535Z",
-      "slug": "les-bon-massages",
-      "status": "published",
-      "title": "Les bon massages"
-    },
-    {
-      "__outstatic": {
-        "commit": "a3b71b403dfaeb10a56720c03259b6ccdbf9216c",
-        "hash": "3873917497",
-        "path": "outstatic/content/articles/article1.md"
-      },
-      "author": {
-        "name": "Antoine Chartier",
-        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
-      },
-      "collection": "articles",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-05-27T15:59:08.649Z",
-      "slug": "article1",
-      "status": "published",
-      "title": "Un article"
-    },
-    {
-      "__outstatic": {
-        "commit": "1b1660a776553c3336b60e665d03e08ab2ca0f6d",
-        "hash": "595588663",
-        "path": "outstatic/content/articles/nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir.md"
-      },
-      "author": {
-        "name": "Antoine Chartier -chatgpt",
-        "picture": ""
-      },
-      "collection": "articles",
-      "coverImage": "/images/article-visa-mexicain-cover-image-U1OT.jpg",
-      "description": "Découvrez les nouvelles exigences de visa pour les Mexicains voyageant au Canada, mises en place en 2024. Apprenez comment ces changements peuvent affecter le tourisme et simplifier votre prochaine visite au Canada. Pour plus d'informations, consultez notre article détaillé.",
-      "publishedAt": "2024-05-27T18:38:43.320Z",
-      "slug": "nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir",
-      "status": "published",
-      "title": "Nouvelles Lois sur les Visas Touristiques pour le Canada : Ce que les Mexicains Doivent Savoir"
     }
   ]
 }
