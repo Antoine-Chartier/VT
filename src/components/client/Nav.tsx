@@ -13,7 +13,7 @@ export default function Nav() {
         <li>
           <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
             <Image
-              src="/logo-fondGrisTopResolution.webp"
+              src="/logos/logo-fondGrisTopResolution.webp"
               alt="Logo"
               width={500}
               height={500}

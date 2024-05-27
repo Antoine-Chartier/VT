@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/favicon-couleur.ico',
+        url: '/favicon/favicon-couleur.ico',
         media: '(prefers-color-scheme: light)',
       },
       {
