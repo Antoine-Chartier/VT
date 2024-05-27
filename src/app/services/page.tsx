@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import Head from "next/head";
 import Nav from "../../components/client/Nav";
 import Footer from "../../components/Footer";
-import { inter, josefin_slab } from "../../libs/fonts";
+import { inter, josefin_slab } from "../../lib/fonts";
 
 export const metadata: Metadata = {
   title: "Services",
