@@ -1,6 +1,6 @@
 {
-  "commit": "a3b71b403dfaeb10a56720c03259b6ccdbf9216c",
-  "generated": "2024-05-27T16:23:29.362Z",
+  "commit": "1b1660a776553c3336b60e665d03e08ab2ca0f6d",
+  "generated": "2024-05-27T19:09:29.833Z",
   "metadata": [
     {
       "__outstatic": {
@@ -91,6 +91,24 @@
       "slug": "article1",
       "status": "published",
       "title": "Un article"
+    },
+    {
+      "__outstatic": {
+        "commit": "1b1660a776553c3336b60e665d03e08ab2ca0f6d",
+        "hash": "595588663",
+        "path": "outstatic/content/articles/nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir.md"
+      },
+      "author": {
+        "name": "Antoine Chartier -chatgpt",
+        "picture": ""
+      },
+      "collection": "articles",
+      "coverImage": "/images/article-visa-mexicain-cover-image-U1OT.jpg",
+      "description": "Découvrez les nouvelles exigences de visa pour les Mexicains voyageant au Canada, mises en place en 2024. Apprenez comment ces changements peuvent affecter le tourisme et simplifier votre prochaine visite au Canada. Pour plus d'informations, consultez notre article détaillé.",
+      "publishedAt": "2024-05-27T18:38:43.320Z",
+      "slug": "nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir",
+      "status": "published",
+      "title": "Nouvelles Lois sur les Visas Touristiques pour le Canada : Ce que les Mexicains Doivent Savoir"
     }
   ]
 }
