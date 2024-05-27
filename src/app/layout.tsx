@@ -12,18 +12,18 @@ export const metadata: Metadata = {
   },
   description: "Test de Viva Tremblant",
   openGraph: {
-    title: 'Outstatic - A Static Site CMS for Next.js',
+    title: 'Viva Tremblant - vivre Tremblant autrement',
     description: 'A blog starter built with Outstatic.',
     url: absoluteUrl('/'),
     siteName: 'Viva Tremblant',
     images: [
       {
-        url: absoluteUrl('/images/og-image.png'),
+        url: absoluteUrl('/images/og/og-image.png'),
         width: 1800,
         height: 1600
       }
     ],
-    locale: 'en_US',
+    locale: 'fr_CA',
     type: 'website'
   },
   icons: {
