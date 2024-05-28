@@ -7,9 +7,9 @@ author:
 slug: 'nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir'
 description: 'Découvrez les nouvelles exigences de visa pour les Mexicains voyageant au Canada, mises en place en 2024. Apprenez comment ces changements peuvent affecter le tourisme et simplifier votre prochaine visite au Canada. Pour plus d''informations, consultez notre article détaillé.'
 coverImage: '/images/article-visa-mexicain-cover-image-U1OT.jpg'
+tags: [{"label":"Mexico","value":"mexico"},{"label":"visa","value":"visa"},{"label":"passport","value":"passport"},{"label":"immigration","value":"immigration"}]
 publishedAt: '2024-05-27T18:38:43.320Z'
 ---
-
 
 Le gouvernement canadien a récemment mis en place de nouvelles règles concernant les visas touristiques pour les citoyens mexicains. Ces changements, en vigueur depuis le 29 février 2024, visent à renforcer la sécurité et la gestion des frontières tout en maintenant des relations solides avec le Mexique.
 

@@ -1,0 +1,43 @@
+{
+  "title": "articles",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": false,
+      "description": "Add a tag",
+      "fieldType": "Tags",
+      "dataType": "array",
+      "title": "Tags",
+      "values": [
+        {
+          "value": "mexico",
+          "label": "Mexico"
+        },
+        {
+          "value": "visa",
+          "label": "visa"
+        },
+        {
+          "value": "passport",
+          "label": "passport"
+        },
+        {
+          "value": "immigration",
+          "label": "immigration"
+        },
+        {
+          "value": "services",
+          "label": "services"
+        },
+        {
+          "value": "bidon",
+          "label": "bidon"
+        },
+        {
+          "value": "vide",
+          "label": "vide"
+        }
+      ]
+    }
+  }
+}
