@@ -55,11 +55,15 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 
 export default async function Post(params: Params) {
   const post = await getData(params)
-  console.log(post)
+  // console.log(post)
   console.log("post")
   return (
     <>
-      <h1>{post.title}</h1>
+      <h1 className='[font-size:_clamp(1em,3vw,3em)] font-semibold '>{post.title}</h1>
+      <div className="hidden md:block md:mb-12 text-slate-600 dark:text-slate-400">
+        Écrit le <DateFormatter dateString={post.publishedAt} /> par{" "}
+        {post?.author?.name || ""}.
+      </div>
       <div className="w-full mb-2 md:mb-4 sm:mx-0 ">
       {Array.isArray(post?.tags)
         ? post.tags.map(({ label }) => (
@@ -83,8 +87,7 @@ export default async function Post(params: Params) {
           )}
         </div>
       </div>
-      <div>
-        {/* <div className="" dangerouslySetInnerHTML={{ __html: post.content }} /> */}
+      <div className='prose min-w-full'>
         <MDXComponent content={post.content} />
       </div>
     </>

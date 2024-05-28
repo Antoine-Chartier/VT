@@ -11,7 +11,7 @@ tags: [{"label":"Mexico","value":"mexico"},{"label":"visa","value":"visa"},{"lab
 publishedAt: '2024-05-27T18:38:43.320Z'
 ---
 
-Le gouvernement canadien a récemment mis en place de nouvelles règles concernant les visas touristiques pour les citoyens mexicains. Ces changements, en vigueur depuis le 29 février 2024, visent à renforcer la sécurité et la gestion des frontières tout en maintenant des relations solides avec le Mexique.
+Le gouvernement canadien a récemment mis en place de nouvelles règles concernant les visas touristiques pour les citoyens mexicains. Ces changements, en vigueur depuis le 29 février 2024, visent à renforcer la sécurité et la gestion des frontières tout en maintenant des relations solides avec le Mexique.  
 
 #### **Nouvelles Exigences de Visa**
 

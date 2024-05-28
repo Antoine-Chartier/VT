@@ -1,5 +1,4 @@
- 
-'use client'
+ 'use client'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -42,10 +41,10 @@ export default function Nav() {
         </li>
         <li>
           <Link
-            className={`link ${pathname === '/blog' ? 'active' : ''}`}
-            href="/blog"
+            className={`link ${pathname.startsWith('/blogue') ? 'active' : ''}`}
+            href="/blogue"
           >
-            Blog
+            Blogue
           </Link>
         </li>
       </ul>

@@ -21,7 +21,7 @@ export default async function Blog() {
         <div>nos Articles</div>
         {allArticles.map((article) => (
           <div key={article.slug}>
-            <Link href={`/blog/${article.slug}`}>
+            <Link href={`/blogue/${article.slug}`}>
               {article.title}
             </Link>
           </div>
