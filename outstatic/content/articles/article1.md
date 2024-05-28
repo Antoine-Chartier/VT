@@ -7,7 +7,7 @@ author:
 slug: 'article1'
 description: ''
 coverImage: ''
-tags: 'bidon'
+tags: 'bidon, vide, '
 publishedAt: '2024-05-27T15:59:08.649Z'
 ---
 
