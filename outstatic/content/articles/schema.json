@@ -28,6 +28,10 @@
         {
           "value": "services",
           "label": "services"
+        },
+        {
+          "value": "bidon",
+          "label": "bidon"
         }
       ]
     }
