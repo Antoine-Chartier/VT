@@ -7,6 +7,8 @@ import markdownToHtml from '@/lib/markdownToHtml'
 import { getDocumentSlugs, load } from 'outstatic/server'
 import DateFormatter from '@/components/DateFormatter'
 import { notFound } from 'next/navigation'
+import MDXComponent from '@/components/mdx/MDX-component'
+import MDXServer from '@/lib/mdx-server'
 
 type Post = {
   tags: { value: string; label: string }[]
@@ -56,24 +58,37 @@ export default async function Post(params: Params) {
   console.log(post)
   console.log("post")
   return (
-        <>
-            <h1>{post.title}</h1>
-            <div className="relative mb-2 md:mb-4 sm:mx-0 w-full h-52 md:h-96">
-            {post?.coverImage && (
-              <Image
-                alt={post.title}
-                src={post.coverImage}
-                layout="fill"
-                className="object-cover object-center"
-                priority
-              />
-            )}
-            </div>
-            <div>
-              <p> {post?.content || ''} </p>
-            </div>
-        </>
-  )
+    <>
+      <h1>{post.title}</h1>
+      <div className="w-full mb-2 md:mb-4 sm:mx-0 ">
+      {Array.isArray(post?.tags)
+        ? post.tags.map(({ label }) => (
+            <span
+              key={label}
+              className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 mt-4"
+            >
+              {label}
+            </span>
+          ))
+        : null}
+        <div className='relative w-full h-52'>
+          {post?.coverImage && (
+            <Image
+              alt={post.title}
+              src={post.coverImage}
+              fill
+              className="object-cover object-center rounded-md border"
+              priority
+            />
+          )}
+        </div>
+      </div>
+      <div>
+        {/* <div className="" dangerouslySetInnerHTML={{ __html: post.content }} /> */}
+        <MDXComponent content={post.content} />
+      </div>
+    </>
+  );
 }
 
 async function getData({ params }: Params) {
@@ -88,7 +103,7 @@ async function getData({ params }: Params) {
       'author',
       'content',
       'coverImage',
-    //   'tags'
+      'tags'
     ])
     .first()
 
@@ -96,7 +111,8 @@ async function getData({ params }: Params) {
     notFound()
   }
 
-  const content = await markdownToHtml(post.content)
+  // const content = await markdownToHtml(post.content)
+  const content = await MDXServer(post.content);
 
   return {
     ...post,
@@ -104,9 +120,7 @@ async function getData({ params }: Params) {
   }
 }
 
-// This function gets called at build time on server-side. It won't be called on client-side.
-// It allows you to fetch data and pre-render the page. This is useful for SEO purposes.
-
+/// Generate static paths for all posts in the collection 'articles' 
 export async function generateStaticParams() {
   const posts = getDocumentSlugs('articles')
   return posts.map((slug) =>  ({ slug }) )

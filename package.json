@@ -10,11 +10,17 @@
   },
   "dependencies": {
     "date-fns": "^3.6.0",
+    "mdx-bundler": "^10.0.2",
     "next": "14.2.3",
     "outstatic": "^1.4.8",
     "react": "^18",
     "react-dom": "^18",
+    "react-markdown": "^9.0.1",
+    "rehype-autolink-headings": "^7.1.0",
+    "rehype-pretty-code": "^0.13.2",
+    "rehype-slug": "^6.0.0",
     "remark": "^15.0.1",
+    "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1"
   },
   "devDependencies": {
