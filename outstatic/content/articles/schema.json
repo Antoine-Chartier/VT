@@ -32,6 +32,10 @@
         {
           "value": "bidon",
           "label": "bidon"
+        },
+        {
+          "value": "vide",
+          "label": "vide"
         }
       ]
     }

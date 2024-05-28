@@ -1,6 +1,6 @@
 {
-  "commit": "eded1c01ef0281ad88b150620473c884a7dc3378",
-  "generated": "2024-05-28T03:47:01.564Z",
+  "commit": "6809c4fca145373ae44e479a016d173aca4515cd",
+  "generated": "2024-05-28T03:47:12.581Z",
   "metadata": [
     {
       "__outstatic": {
@@ -118,8 +118,8 @@
     },
     {
       "__outstatic": {
-        "commit": "eded1c01ef0281ad88b150620473c884a7dc3378",
-        "hash": "3292796313",
+        "commit": "6809c4fca145373ae44e479a016d173aca4515cd",
+        "hash": "1346919380",
         "path": "outstatic/content/articles/article1.md"
       },
       "author": {
@@ -136,6 +136,10 @@
         {
           "label": "bidon",
           "value": "bidon"
+        },
+        {
+          "label": "vide",
+          "value": "vide"
         }
       ],
       "title": "Un article"
