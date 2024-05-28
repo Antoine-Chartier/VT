@@ -1,6 +1,6 @@
 {
   "commit": "c8df91213e38f931ced7e94359bf784534ee0570",
-  "generated": "2024-05-28T03:43:48.489Z",
+  "generated": "2024-05-28T03:43:59.742Z",
   "metadata": [
     {
       "__outstatic": {
@@ -96,7 +96,7 @@
     {
       "__outstatic": {
         "commit": "c8df91213e38f931ced7e94359bf784534ee0570",
-        "hash": "1578609092",
+        "hash": "3273123846",
         "path": "outstatic/content/articles/nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir.md"
       },
       "author": {
@@ -109,7 +109,7 @@
       "publishedAt": "2024-05-27T18:38:43.320Z",
       "slug": "nouvelles-lois-sur-les-visas-touristiques-pour-le-canada-ce-que-les-mexicains-doivent-savoir",
       "status": "published",
-      "tags": "Mexico",
+      "tags": "visa",
       "title": "Nouvelles Lois sur les Visas Touristiques pour le Canada : Ce que les Mexicains Doivent Savoir"
     }
   ]
