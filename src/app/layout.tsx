@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from '@/lib/utils'
-// import { inter, josefin_slab } from "./fonts";
 import "../styles/globals.css";
 
 
@@ -47,9 +46,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-      {/* <body className={josefin_slab.className + " flex flex-col min-h-screen"}> */}
         {children}
-      {/* </body> */}
     </html>
   );
 }

@@ -1,4 +1,4 @@
-import Layout from "../../components/Layout";
+import Layout from "../../components/AppLayout";
 import { Metadata } from "next";
 import Head from "next/head";
 import Nav from "../../components/client/Nav";
@@ -13,11 +13,9 @@ export const metadata: Metadata = {
 const Services = () => {
   return (
     <Layout>
-      <Nav />
       <main className="flex-grow items-center justify-between p-24">
         <div>nos services</div>
       </main>
-      <Footer />
     </Layout>
   );    
 }

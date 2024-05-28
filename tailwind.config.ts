@@ -1,3 +1,4 @@
+import { text } from "stream/consumers";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -14,8 +15,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
+        text: {
+          primary: "#161f15",
+          primaryHover: "#536c50",
+        },
         gris: {
-          200: "#d9d9d9",
+          200: "#eff3f8",
           900: "#0b1c2c",
         },
       },
