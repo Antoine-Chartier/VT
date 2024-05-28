@@ -1,6 +1,6 @@
 {
-  "commit": "6809c4fca145373ae44e479a016d173aca4515cd",
-  "generated": "2024-05-28T03:47:12.581Z",
+  "commit": "ddb54fdff0949a39022fb129f19834c4ece24a20",
+  "generated": "2024-05-28T15:51:50.556Z",
   "metadata": [
     {
       "__outstatic": {
@@ -143,6 +143,30 @@
         }
       ],
       "title": "Un article"
+    },
+    {
+      "__outstatic": {
+        "commit": "ddb54fdff0949a39022fb129f19834c4ece24a20",
+        "hash": "3402899345",
+        "path": "outstatic/content/articles/un-quatrieme-article-avec-images.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": ""
+      },
+      "collection": "articles",
+      "coverImage": "https://images.radio-canada.ca/q_auto,w_700/v1/ici-info/sports/16x9/ski-alpin-piste-flying-mile-mont-tremblant.jpg",
+      "description": "Article test pour les images importé avec url et depuis l'ordinateur",
+      "publishedAt": "2024-05-28T15:22:25.914Z",
+      "slug": "un-quatrieme-article-avec-images",
+      "status": "published",
+      "tags": [
+        {
+          "label": "bidon",
+          "value": "bidon"
+        }
+      ],
+      "title": "Un quatrième article avec images"
     }
   ]
 }
