@@ -1,0 +1,13 @@
+{
+  "title": "articles",
+  "type": "object",
+  "properties": {
+    "tags": {
+      "required": false,
+      "description": "Add a tag",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "Tags"
+    }
+  }
+}
