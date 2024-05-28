@@ -24,6 +24,10 @@
         {
           "value": "immigration",
           "label": "immigration"
+        },
+        {
+          "value": "services",
+          "label": "services"
         }
       ]
     }

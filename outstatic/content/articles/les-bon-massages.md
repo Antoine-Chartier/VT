@@ -7,6 +7,7 @@ author:
 slug: 'les-bon-massages'
 description: ''
 coverImage: ''
+tags: [{"label":"services","value":"services"}]
 publishedAt: '2024-05-26T01:21:04.535Z'
 ---
 
