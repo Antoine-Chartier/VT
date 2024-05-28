@@ -1,6 +1,6 @@
 {
-  "commit": "ddb54fdff0949a39022fb129f19834c4ece24a20",
-  "generated": "2024-05-28T15:51:50.556Z",
+  "commit": "96e10cf33d18e62f2aa37792d764a8cd3771f3c5",
+  "generated": "2024-05-28T19:57:39.675Z",
   "metadata": [
     {
       "__outstatic": {
@@ -167,6 +167,30 @@
         }
       ],
       "title": "Un quatrième article avec images"
+    },
+    {
+      "__outstatic": {
+        "commit": "96e10cf33d18e62f2aa37792d764a8cd3771f3c5",
+        "hash": "86863813",
+        "path": "outstatic/content/articles/article-ecrit-par-compte-ecole.md"
+      },
+      "author": {
+        "name": "Antoine",
+        "picture": "https://avatars.githubusercontent.com/u/124280212?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "/images/avataaars-M1ND.svg",
+      "description": "Ceci est un article test, c'est le premier article écrit par un autre compte que celui propriétaire du repo et il a une il a des images SVGs",
+      "publishedAt": "2024-05-28T18:41:30.611Z",
+      "slug": "article-ecrit-par-compte-ecole",
+      "status": "published",
+      "tags": [
+        {
+          "label": "test",
+          "value": "test"
+        }
+      ],
+      "title": "Article écrit par compte école"
     }
   ]
 }

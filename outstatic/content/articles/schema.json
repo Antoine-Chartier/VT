@@ -36,6 +36,10 @@
         {
           "value": "vide",
           "label": "vide"
+        },
+        {
+          "value": "test",
+          "label": "test"
         }
       ]
     }
