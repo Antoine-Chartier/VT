@@ -8,7 +8,24 @@
       "fieldType": "Tags",
       "dataType": "array",
       "title": "Tags",
-      "values": []
+      "values": [
+        {
+          "value": "mexico",
+          "label": "Mexico"
+        },
+        {
+          "value": "visa",
+          "label": "visa"
+        },
+        {
+          "value": "passport",
+          "label": "passport"
+        },
+        {
+          "value": "immigration",
+          "label": "immigration"
+        }
+      ]
     }
   }
 }
