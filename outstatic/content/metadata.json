@@ -1,25 +1,7 @@
 {
-  "commit": "ae27ff0ba630b273ec3ffcf8bed049c6eecf34d8",
-  "generated": "Mon, 27 May 2024 19:18:46 GMT",
+  "commit": "9d629598a4f025fcc16a58cc9677196f8edb9e54",
+  "generated": "2024-05-28T03:43:24.017Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "cb58d2dfbc36ed2d9032f03176ea850f532c739d",
-        "hash": "3873917497",
-        "path": "outstatic/content/articles/article1.md"
-      },
-      "author": {
-        "name": "Antoine Chartier",
-        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
-      },
-      "collection": "articles",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-05-27T15:59:08.649Z",
-      "slug": "article1",
-      "status": "published",
-      "title": "Un article"
-    },
     {
       "__outstatic": {
         "commit": "605f8d03c31168d103c389ed1a495fdb7e2e4ca9",
@@ -109,6 +91,25 @@
       "slug": "accueil",
       "status": "published",
       "title": "Accueil"
+    },
+    {
+      "__outstatic": {
+        "commit": "9d629598a4f025fcc16a58cc9677196f8edb9e54",
+        "hash": "524845472",
+        "path": "outstatic/content/articles/article1.md"
+      },
+      "author": {
+        "name": "Antoine Chartier",
+        "picture": "https://avatars.githubusercontent.com/u/121460528?v=4"
+      },
+      "collection": "articles",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-05-27T15:59:08.649Z",
+      "slug": "article1",
+      "status": "published",
+      "tags": "bidon",
+      "title": "Un article"
     }
   ]
 }
