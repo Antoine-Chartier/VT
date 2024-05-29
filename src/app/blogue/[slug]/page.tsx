@@ -75,8 +75,8 @@ export default async function Post(params: Params) {
             </span>
           ))
         : null}
-        <div className='relative w-full h-52'>
           {post?.coverImage && (
+          <div className='relative w-full h-52'>
             <Image
               alt={post.title}
               src={post.coverImage}
@@ -84,8 +84,8 @@ export default async function Post(params: Params) {
               className="object-cover object-center rounded-md border"
               priority
             />
+          </div>
           )}
-        </div>
       </div>
       <div className='prose min-w-full'>
         <MDXComponent content={post.content} />

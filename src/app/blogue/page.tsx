@@ -5,6 +5,7 @@ import Nav from "@/components/client/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import markdownToHtml from "@/lib/markdownToHtml";
+import CarteArticle from "@/components/CarteArticle";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -13,19 +14,23 @@ export const metadata: Metadata = {
 
 export default async function Blog() {
   const { allArticles } = await getData()
-  // console.log(allArticles);
+
   console.log("allo");
+  // console.log(allArticles);
 
   return (
     <AppLayout>
-        <div>nos Articles</div>
+        <div>Qu'est-ce qui se passe à Mont-Tremblant.</div>
+        <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
         {allArticles.map((article) => (
-          <div key={article.slug}>
-            <Link href={`/blogue/${article.slug}`}>
-              {article.title}
-            </Link>
-          </div>
-        ))}      
+          <CarteArticle key={article.slug} Article={article} />
+          // <div key={article.slug}>
+          //   <Link href={`/blogue/${article.slug}`}>
+          //     {article.title}
+          //   </Link>
+          // </div>
+        ))}
+        </ul>
     </AppLayout>
   );    
 }
@@ -45,7 +50,7 @@ async function getData() {
       'slug',
       'coverImage',
       'description',
-      // 'tags'
+      'tags'
     ])
     .sort({ publishedAt: -1 })
     .toArray()
