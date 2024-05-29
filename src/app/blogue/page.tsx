@@ -20,15 +20,10 @@ export default async function Blog() {
 
   return (
     <AppLayout>
-        <div>Qu'est-ce qui se passe à Mont-Tremblant.</div>
+        <div>Qu&apos;est-ce qui se passe à Mont-Tremblant.</div>
         <ul className="grid grid-cols-1 xl:grid-cols-3 gap-y-10 gap-x-6 items-start p-8">
         {allArticles.map((article) => (
           <CarteArticle key={article.slug} Article={article} />
-          // <div key={article.slug}>
-          //   <Link href={`/blogue/${article.slug}`}>
-          //     {article.title}
-          //   </Link>
-          // </div>
         ))}
         </ul>
     </AppLayout>

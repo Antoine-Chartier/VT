@@ -29,7 +29,7 @@ const CarteArticle = ({ Article }: ArticleProps) => {
 
                     <Link
                         className="group inline-flex items-center h-9 rounded-full text-sm font-semibold whitespace-nowrap px-3 focus:outline-none focus:ring-2 bg-slate-100 text-slate-700 hover:bg-slate-200 hover:text-slate-900 focus:ring-slate-500 mt-6"
-                        href={`blogue/${Article.slug}`}>Voir l'article<span className="sr-only">bouton voir l'article</span>
+                        href={`blogue/${Article.slug}`}>Voir l&apos;article<span className="sr-only">bouton voir l&apos;article</span>
                         <svg className="overflow-visible ml-3 text-slate-300 group-hover:text-slate-400"
                             width="3" height="6" viewBox="0 0 3 6" fill="none" stroke="currentColor" stroke-width="2"
                             stroke-linecap="round" stroke-linejoin="round">
