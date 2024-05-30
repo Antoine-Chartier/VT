@@ -18,25 +18,10 @@
   }
 }
 
-body {
-  color: var(--couleur-texte);
-  background: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb)); */
-}
-
 @layer components {
-  .active {
-    color: var(--couleur-texte-hover);
-  }
+
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+
 }

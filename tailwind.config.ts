@@ -7,22 +7,32 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  // darkMode: 'class', // pour activer le mode sombre
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
       colors: {
-        text: {
-          primary: "#161f15",
-          primaryHover: "#536c50",
+        // colors for light theme
+        light: {
+          main: '#fefdf2',
+          text: {
+            primary: '#161f15',
+            primaryHover: '#536c50',
+          },
+          // other colors...
         },
-        gris: {
-          200: "#eff3f8",
-          900: "#0b1c2c",
+        // colors for dark theme
+        dark: {
+          main: '#1a202c',
+          text: {
+            primary: '#f7fafc',
+            primaryHover: '#a0aec0',
+          },
+          // other colors...
         },
+      },
+      padding: {
+        'main-clamp': 'clamp(1em,5vw,10em) clamp(1em,6vw,10em)',
+        'main-side': '0 clamp(1em,6vw,10em)',
       },
     },
   },

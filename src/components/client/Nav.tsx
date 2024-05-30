@@ -1,7 +1,9 @@
- 'use client'
+ 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+import SVGComponent from '../SVGComponent'
+
 
  
 export default function Nav() {
@@ -9,46 +11,25 @@ export default function Nav() {
  
 
   return (
-    <nav className='flex flex-col md:flex-row md:m-20 md:ml-0'>
-        <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
-          <Image
-            src="/logos/Viva-Tremblant-logo-transparant.webp"
-            alt="Logo"
-            width={477}
-            height={222}
-            priority
-          />
-        </Link>
-    <div className={'flex justify-center m-10 mr-0 '}>
-
-
-      <ul className={'flex flex-col sm:flex-row md:flex-col xl:flex-row gap-3 sm:gap-6 md:gap-10 [font-size:_clamp(1.5em,2vw,4em)] font-semibold'}>
-        <li className=''>
-          <Link
-            className={`link ${pathname === '/services' ? 'active' : ''}`}
-            href="/services"
-          >
-            Services
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={`link ${pathname === '/contact' ? 'active' : ''}`}
-            href="/contact"
-          >
-            Contactez-nous
-          </Link>
-        </li>
-        <li>
-          <Link
-            className={`link ${pathname.startsWith('/blogue') ? 'active' : ''}`}
-            href="/blogue"
-          >
-            Blogue
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <nav className='flex flex-row p-main-clamp z-10 '>
+      <div className='w-full p-8 bg-light-main dark:bg-dark-main'>
+        <div className='flex justify-between text-xl'>
+          <div>
+            <Link href={"/"}>
+              <span className='flex'>
+                <div className='flex flex-col justify-center w-4 mr-2'>
+                  <SVGComponent/>
+                </div>
+                <span className='mt-1 font-semibold'>Viva Tremblant</span>
+              </span>
+            </Link>
+          </div>
+          <div className='flex gap-8'>
+            <div className='flex flex-col justify-center mt-1' >Services</div>
+            <div className='flex flex-col justify-center mt-1' >La mission</div>
+          </div>
+        </div>
+      </div>
     </nav>
 
   )

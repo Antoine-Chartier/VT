@@ -1,8 +1,8 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-It's a first try for the vivaTremblant website
+It's a first try for the vivaTremblant website.
 
-It's a little static blog starter kit from [outStatic](https://outstatic.com/) that I customized
+It's a little static blog starter kit from [outStatic](https://outstatic.com/) that I customized.
 
 ## Learn More
 
