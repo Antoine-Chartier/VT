@@ -1,7 +1,7 @@
 import Layout from "../../components/AppLayout";
 import { Metadata } from "next";
 import Head from "next/head";
-import Nav from "../../components/client/Nav";
+import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 import { inter, josefin_slab } from "../../lib/fonts";
 

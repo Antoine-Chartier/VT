@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { load } from "outstatic/server";
 import AppLayout from "@/components/AppLayout";
-import Nav from "@/components/client/Nav";
+import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Link from "next/link";
 import markdownToHtml from "@/lib/markdownToHtml";
