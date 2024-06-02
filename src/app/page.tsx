@@ -29,7 +29,7 @@ const Accueil = () => {
                 <h3 className="text-center">Contactez-nous</h3>
               </div>
               <div className={`${questrial.className} mt-10`}>
-                <form action="" className="flex flex-col gap-4">
+                <form action="" className="flex flex-col gap-4" name="contact" data-netlify="true"  >
                   <div>
                     <label htmlFor="firstName" className="font-medium">Nom *</label>
                     <input type="text" required id="firstName" name="nom" className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
