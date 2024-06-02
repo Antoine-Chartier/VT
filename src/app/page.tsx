@@ -30,7 +30,7 @@ const Accueil = () => {
               </div>
               <div className={`${questrial.className} mt-10`}>
                 <form action="" className="flex flex-col gap-4" name="contact" data-netlify="true"  >
-                <input type="hidden" name="contact" value="contact" />
+                <input type="hidden" name="form-name" value="contact" />
 
                   <div>
                     <label htmlFor="firstName" className="font-medium">Nom *</label>
