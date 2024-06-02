@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default async function Blog() {
   const { allArticles } = await getData()
 
-  console.log("allo");
+  // console.log("allo");
   // console.log(allArticles);
 
   return (

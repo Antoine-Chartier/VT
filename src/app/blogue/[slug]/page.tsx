@@ -56,7 +56,7 @@ export async function generateMetadata(params: Params): Promise<Metadata> {
 export default async function Post(params: Params) {
   const post = await getData(params)
   // console.log(post)
-  console.log("post")
+  // console.log("post")
   return (
     <>
       <h1 className='[font-size:_clamp(1em,3vw,3em)] font-semibold '>{post.title}</h1>
