@@ -2,21 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
 :root {
-  --couleur-texte: #161f15;
+  --foreground-color: #fefdf2;
+  --background-color: #161f15;
+  --secondary-color: #fdfab0;
   --couleur-texte-hover: #536c50;
-  --foreground-rgb: 239, 243, 248;
-  --background-start-rgb: 239, 243, 248;
-  --background-end-rgb: 239, 243, 248;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 217, 217, 217;
-    --background-start-rgb: 217, 217, 217;
-    --background-end-rgb: 217, 217, 217;
+    --foreground-color: white;
+    --background-color: black;
   }
 }
+}
+
 
 @layer components {
 

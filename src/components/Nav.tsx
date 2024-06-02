@@ -1,4 +1,4 @@
- 
+
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -59,7 +59,7 @@ export default function Nav() {
     }}
     animate={hidden ? "hidden" : "visible"}
     transition={{ duration: 0.35, ease: "easeInOut" }}
-    className='flex flex-row p-main-clamp z-30 sticky top-0'
+    className='flex flex-row md:p-main-clamp z-30 sticky top-0'
     >
       <div className='w-full bg-light-main dark:bg-dark-main'>
           <div className='flex justify-between text-xl p-8'>
@@ -92,7 +92,7 @@ export default function Nav() {
               animate="open"
               exit="closed"
               whileInView="open"
-              className={`md:hidden text-xl w-full absolute bg-inherit`}
+              className={`md:hidden text-xl w-full absolute bg-inherit -top-1`}
               >
                 <motion.div
                  variants={variants}

@@ -13,7 +13,8 @@ const config: Config = {
       colors: {
         // colors for light theme
         light: {
-          main: '#fefdf2',
+          main: "var(--foreground-color)",
+          secondary: "var(--secondary-color)",
           text: {
             primary: '#161f15',
             primaryHover: '#536c50',
@@ -22,7 +23,8 @@ const config: Config = {
         },
         // colors for dark theme
         dark: {
-          main: '#1a202c',
+          main: "var(--foreground-color)",
+          secondary: "var(--background-color)",
           text: {
             primary: '#f7fafc',
             primaryHover: '#a0aec0',
