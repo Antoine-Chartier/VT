@@ -11,7 +11,6 @@ const Accueil = () => {
 
 
 
-
   return (
     <>
       <AppLayout>
@@ -29,7 +28,7 @@ const Accueil = () => {
                 <h3 className="text-center">Contactez-nous</h3>
               </div>
               <div className={`${questrial.className} mt-10`}>
-                <form action="/succes" className="flex flex-col gap-4" method="POST" name="contact" data-netlify="true"  >
+                <form action="" className="flex flex-col gap-4" method="POST" name="contact" data-netlify="true"  >
                 <input type="hidden" name="form-name" value="contact" />
 
                   <div>
