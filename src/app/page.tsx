@@ -6,6 +6,7 @@ import { questrial } from "../lib/fonts";
 import Form from "@/components/Form";
 
 import { useForm, SubmitHandler } from "react-hook-form"
+import ContactForm from "@/components/ContactForm";
 
 const Accueil = () => {
 
@@ -63,7 +64,8 @@ const Accueil = () => {
                   </div>
                 </form>
 
-                {/* <Form/> */}
+                <ContactForm />
+
               </div>
             </div>
           </section>
