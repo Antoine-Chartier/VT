@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from '@/lib/utils'
 import "../styles/globals.css";
-import ContactForm from "@/components/ContactForm";
 
 
 export const metadata: Metadata = {
@@ -48,6 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+
 
 
         {children}
