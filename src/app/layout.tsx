@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-        <form name="contact" method="post" data-netlify='true' hidden >
+        <form name="contact" method="post" data-netlify='true' >
     <input type="hidden" name="form-name" value="contact" />
       <div>
        <label htmlFor="name">Name</label>
