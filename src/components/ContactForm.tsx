@@ -15,7 +15,7 @@ const encode = (data: { [x: string]: string | number | boolean; }) => {
     });
    const handleSubmit = (e: { preventDefault: () => void; }) => {
      e.preventDefault();
-     fetch("/", {
+     fetch("/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formData }),
@@ -33,7 +33,7 @@ const encode = (data: { [x: string]: string | number | boolean; }) => {
     return (
      <div>
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit} method="post" data-netlify='true'>
+      <form onSubmit={handleSubmit} method="post" data-netlify='true' name="contact">
       <input type="hidden" name="form-name" value="contact" />
       <div>
        <label htmlFor="name">Name</label>
