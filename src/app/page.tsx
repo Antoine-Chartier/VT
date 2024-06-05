@@ -1,49 +1,44 @@
-'use client'
-import { useState } from "react";
-
-import Image from "next/image";
 import AppLayout from "../components/AppLayout";
 import { questrial } from "../lib/fonts";
-import Form from "@/components/Form";
 
-import { useForm, SubmitHandler } from "react-hook-form"
+// import { useForm, SubmitHandler } from "react-hook-form"
 import ContactForm from "@/components/ContactForm";
 
-const encode = (data: { [x: string]: string | number | boolean; }) => {
-  return Object.keys(data)
-   .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-   .join("&");
- };
+// const encode = (data: { [x: string]: string | number | boolean; }) => {
+//   return Object.keys(data)
+//    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//    .join("&");
+//  };
  
- type FormInputs = {
-  name: string;
-  email: string;
-  city: string;
-  situation: string;
-};
+//  type FormInputs = {
+//   name: string;
+//   email: string;
+//   city: string;
+//   situation: string;
+// };
 
 const Accueil = () => {
 
 
-   const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+  //  const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
 
-   const onSubmit: SubmitHandler<FormInputs> = async (data) => {
-    try {
-      const response = await fetch("/__forms.html", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contactForm", ...data }),
-      });
+  //  const onSubmit: SubmitHandler<FormInputs> = async (data) => {
+  //   try {
+  //     const response = await fetch("/__forms.html", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: encode({ "form-name": "contactForm", ...data }),
+  //     });
   
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
+  //     if (!response.ok) {
+  //       throw new Error(`HTTP error! status: ${response.status}`);
+  //     }
   
-      alert("Success!");
-    } catch (error) {
-      alert(error);
-    }
-  };
+  //     alert("Success!");
+  //   } catch (error) {
+  //     alert(error);
+  //   }
+  // };
    
   return (
     <>
@@ -62,7 +57,7 @@ const Accueil = () => {
                 <h3 className="text-center">Contactez-nous</h3>
               </div>
               <div className={`${questrial.className} mt-10`}>
-                <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
+                {/* <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
                 <input type="hidden" name="form-name" value="contact"/>
 
                   <div>
@@ -95,9 +90,9 @@ const Accueil = () => {
                       Envoyer
                     </button>
                   </div>
-                </form>
+                </form> */}
 
-                {/* <ContactForm /> */}
+                <ContactForm />
 
               </div>
             </div>
