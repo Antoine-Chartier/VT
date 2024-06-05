@@ -14,6 +14,7 @@ const encode = (data: { [x: string]: string | number | boolean; }) => {
    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
    .join("&");
  };
+ 
  type FormInputs = {
   name: string;
   email: string;
@@ -26,15 +27,23 @@ const Accueil = () => {
 
    const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
 
-   const onSubmit: SubmitHandler<FormInputs> = (data) => {
-     fetch("/__forms.html", {
-       method: "POST",
-       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-       body: encode({ "form-name": "contactForm", ...data }),
-     })
-     .then(() => alert("Success!"))
-     .catch((error) => alert(error));
-   };
+   const onSubmit: SubmitHandler<FormInputs> = async (data) => {
+    try {
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contactForm", ...data }),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+  
+      alert("Success!");
+    } catch (error) {
+      alert(error);
+    }
+  };
    
   return (
     <>
