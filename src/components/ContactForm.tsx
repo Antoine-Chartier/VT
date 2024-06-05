@@ -31,8 +31,6 @@ import { useForm, SubmitHandler } from "react-hook-form"
        if (!response.ok) {
          throw new Error(`HTTP error! status: ${response.status}`);
        }
-   
-       alert("Success!");
        reset(); // Reset form fields
      } catch (error : any) {
       setError("root", {
@@ -74,7 +72,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
           </div>
         </div>
         { errors.root && <span className="text-red-500">{errors.root.message}</span>}
-        { isSubmitSuccessful && <span className="text-red-500">Merci pour votre intérêt, nous vous contacterons sous peu.</span>}
+        { isSubmitSuccessful && <span className="text-green-500">Merci pour votre intérêt, nous vous contacterons sous peu.</span>}
         <div className="flex justify-center my-7">
           <button type="submit"  className=" bg-slate-900 text-white rounded-full p-4 w-1/2 ">
             Envoyer
