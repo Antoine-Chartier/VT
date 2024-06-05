@@ -67,15 +67,15 @@ const Accueil = () => {
 
                   <div>
                     <label htmlFor="firstName" className="font-medium">Nom *</label>
-                    <input type="text" required id="firstName" name="nom" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
+                    <input type="text" required id="firstName" name="name" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
                   </div>
                   <div>
                     <label htmlFor="email" className="font-medium">Courriel *</label>
-                    <input type="email" required id="email" name="courriel" onChange={handleChange} pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="email" required id="email" name="email" onChange={handleChange} pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="city" className="font-medium">Ville</label>
-                    <input type="text" id="city" name="ville" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="text" id="city" name="city" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="situation" className="font-medium">Votre situation</label>
