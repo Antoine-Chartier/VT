@@ -14,35 +14,26 @@ const encode = (data: { [x: string]: string | number | boolean; }) => {
    .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
    .join("&");
  };
-
+ type FormInputs = {
+  name: string;
+  email: string;
+  city: string;
+  situation: string;
+};
 
 const Accueil = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    ville: "",
-    situation: "",
-   });
 
-  const handleSubmit = (e: { preventDefault: () => void; }) => {
-    e.preventDefault();
-    fetch("/__forms.html", {
-     method: "POST",
-     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-     body: encode({ "form-name": "contactForm", ...formData }),
-    })
+
+   const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+
+   const onSubmit: SubmitHandler<FormInputs> = (data) => {
+     fetch("/__forms.html", {
+       method: "POST",
+       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+       body: encode({ "form-name": "contactForm", ...data }),
+     })
      .then(() => alert("Success!"))
      .catch((error) => alert(error));
-   };
-
-   const handleChange = (e: { target: { name: any; value: any; }; }) => {
-    const { name, value } = e.target;
-    
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-     }));
-     console.log(formData);
    };
    
   return (
@@ -62,25 +53,25 @@ const Accueil = () => {
                 <h3 className="text-center">Contactez-nous</h3>
               </div>
               <div className={`${questrial.className} mt-10`}>
-                <form onSubmit={handleSubmit} method="post" name="contact" className="flex flex-col gap-4">
+                <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
                 <input type="hidden" name="form-name" value="contact"/>
 
                   <div>
                     <label htmlFor="firstName" className="font-medium">Nom *</label>
-                    <input type="text" required id="firstName" name="name" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
+                    <input type="text" required id="name" {...register("name")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
                   </div>
                   <div>
                     <label htmlFor="email" className="font-medium">Courriel *</label>
-                    <input type="email" required id="email" name="email" onChange={handleChange} pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="email" required id="email" {...register("email")}  pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="city" className="font-medium">Ville</label>
-                    <input type="text" id="city" name="city" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="text" id="city" {...register("city")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="situation" className="font-medium">Votre situation</label>
                     <div className="flex relative mt-2">
-                      <select id="situation" name="situation" onChange={handleChange} className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
+                      <select id="situation" {...register("situation")}  className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
                         <option value="proprietaire">Propriétaire</option>
                         <option value="vacancier">Vacancier</option>
                         <option value="autre">Autre</option>
