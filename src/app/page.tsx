@@ -26,6 +26,7 @@ const Accueil = () => {
               </div>
               <div className={`${questrial.className} mt-10`}>
 
+
                 <ContactForm />
 
               </div>
