@@ -44,7 +44,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
       <input type="hidden" name="form-name" value="contact"/>
 
         <div>
-          <label htmlFor="firstName" className="font-medium">Nom *</label>
+          <label htmlFor="name" className="font-medium">Nom *</label>
           <input type="text" id="name" {...register("name", {required: 'Ce champs est requis'})} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
           {errors.name && <span className="text-red-500">{errors.name.message}</span>}
         </div>
