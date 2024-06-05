@@ -17,9 +17,10 @@ import { useForm, SubmitHandler } from "react-hook-form"
   };
 
    const ContactForm = () => {
-    const { register, handleSubmit, formState: { errors } } = useForm<FormInputs>();
+    const { register, handleSubmit, formState: { errors }, setError, reset } = useForm<FormInputs>();
 
     const onSubmit: SubmitHandler<FormInputs> = async (data) => {
+      console.log(data);
      try {
        const response = await fetch("/__forms.html", {
          method: "POST",
@@ -32,8 +33,12 @@ import { useForm, SubmitHandler } from "react-hook-form"
        }
    
        alert("Success!");
-     } catch (error) {
-       alert(error);
+       reset(); // Reset form fields
+     } catch (error : any) {
+      setError("root", {
+        type: error,
+        message: "Une erreur s'est produite lors de l'envoi du formulaire. Veuillez réessayer."
+      });
      }
    };
     return (
@@ -42,11 +47,13 @@ import { useForm, SubmitHandler } from "react-hook-form"
 
         <div>
           <label htmlFor="firstName" className="font-medium">Nom *</label>
-          <input type="text" required id="name" {...register("name")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
+          <input type="text" id="name" {...register("name", {required: 'Ce champs est requis'})} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
+          {errors.name && <span className="text-red-500">{errors.name.message}</span>}
         </div>
         <div>
           <label htmlFor="email" className="font-medium">Courriel *</label>
-          <input type="email" required id="email" {...register("email")}  pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+          <input type="email" id="email" {...register("email", {required: 'Ce champs est requis'})}  pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+          {errors.email && <span className="text-red-500">{errors.email.message}</span>}
         </div>
         <div>
           <label htmlFor="city" className="font-medium">Ville</label>
@@ -56,6 +63,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
           <label htmlFor="situation" className="font-medium">Votre situation</label>
           <div className="flex relative mt-2">
             <select id="situation" {...register("situation")}  className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
+              <option value="">...</option>
               <option value="proprietaire">Propriétaire</option>
               <option value="vacancier">Vacancier</option>
               <option value="autre">Autre</option>
@@ -65,8 +73,9 @@ import { useForm, SubmitHandler } from "react-hook-form"
             </div>
           </div>
         </div>
+        { errors.root && <span className="text-red-500">{errors.root.message}</span>}
         <div className="flex justify-center my-7">
-          <button type="submit" className=" bg-slate-900 text-white rounded-full p-4 w-1/2 ">
+          <button type="submit"  className=" bg-slate-900 text-white rounded-full p-4 w-1/2 ">
             Envoyer
           </button>
         </div>
