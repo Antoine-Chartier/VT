@@ -17,7 +17,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
   };
 
    const ContactForm = () => {
-    const { register, handleSubmit, formState: { errors }, setError, reset } = useForm<FormInputs>();
+    const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, setError, reset } = useForm<FormInputs>();
 
     const onSubmit: SubmitHandler<FormInputs> = async (data) => {
       console.log(data);
@@ -74,6 +74,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
           </div>
         </div>
         { errors.root && <span className="text-red-500">{errors.root.message}</span>}
+        { isSubmitSuccessful && <span className="text-red-500">Merci pour votre intérêt, nous vous contacterons sous peu.</span>}
         <div className="flex justify-center my-7">
           <button type="submit"  className=" bg-slate-900 text-white rounded-full p-4 w-1/2 ">
             Envoyer
