@@ -22,7 +22,7 @@ const Accueil = () => {
             <div className="bg-light-secondary dark:bg-dark-secondary dark:text-dark-main rounded-xl px-4 py-10">
               <div className={`${questrial.className}`}>
                 <h1 className="text-center text-2xl text-pretty">Demandez-nous conseils pour votre propriété ou votre séjour!</h1>
-                <h3 className="text-center">Contactez-nous</h3>
+                <h2 className="text-center">Contactez-nous</h2>
               </div>
               <div className={`${questrial.className} mt-10`}>
 
