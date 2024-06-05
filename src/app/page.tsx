@@ -1,4 +1,5 @@
 'use client'
+import { useState } from "react";
 
 import Image from "next/image";
 import AppLayout from "../components/AppLayout";
@@ -8,10 +9,42 @@ import Form from "@/components/Form";
 import { useForm, SubmitHandler } from "react-hook-form"
 import ContactForm from "@/components/ContactForm";
 
+const encode = (data: { [x: string]: string | number | boolean; }) => {
+  return Object.keys(data)
+   .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+   .join("&");
+ };
+
+
 const Accueil = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    ville: "",
+    situation: "",
+   });
 
+  const handleSubmit = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    fetch("/__forms.html", {
+     method: "POST",
+     headers: { "Content-Type": "application/x-www-form-urlencoded" },
+     body: encode({ "form-name": "contactForm", ...formData }),
+    })
+     .then(() => alert("Success!"))
+     .catch((error) => alert(error));
+   };
 
-
+   const handleChange = (e: { target: { name: any; value: any; }; }) => {
+    const { name, value } = e.target;
+    
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+     }));
+     console.log(formData);
+   };
+   
   return (
     <>
       <AppLayout>
@@ -29,28 +62,28 @@ const Accueil = () => {
                 <h3 className="text-center">Contactez-nous</h3>
               </div>
               <div className={`${questrial.className} mt-10`}>
-                <form action="" className="flex flex-col gap-4" method="POST" name="contact" data-netlify="true"  >
-                <input type="hidden" name="form-name" value="contact" />
+                <form onSubmit={handleSubmit} method="post" name="contact" className="flex flex-col gap-4">
+                <input type="hidden" name="form-name" value="contact"/>
 
                   <div>
                     <label htmlFor="firstName" className="font-medium">Nom *</label>
-                    <input type="text" required id="firstName" name="nom" className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
+                    <input type="text" required id="firstName" name="nom" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5 "/>
                   </div>
                   <div>
                     <label htmlFor="email" className="font-medium">Courriel *</label>
-                    <input type="email" required id="email" name="courriel" pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="email" required id="email" name="courriel" onChange={handleChange} pattern="^.+@.+\.[a-zA-Z]{2,63}$"    className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="city" className="font-medium">Ville</label>
-                    <input type="text" id="city" name="ville" className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+                    <input type="text" id="city" name="ville" onChange={handleChange} className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
                   </div>
                   <div>
                     <label htmlFor="situation" className="font-medium">Votre situation</label>
                     <div className="flex relative mt-2">
-                      <select id="situation" name="situation" className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
-                        <option value="buy">Propriétaire</option>
-                        <option value="sell">Vacancier</option>
-                        <option value="rent">Autre</option>
+                      <select id="situation" name="situation" onChange={handleChange} className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
+                        <option value="proprietaire">Propriétaire</option>
+                        <option value="vacancier">Vacancier</option>
+                        <option value="autre">Autre</option>
                       </select>
                       <div className="flex absolute top-0 right-5 w-3 h-full">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.2828 4.89817" aria-hidden="true"><path d="M4.64116,4.89817a.5001.5001,0,0,1-.34277-.13574L.15727.86448A.50018.50018,0,0,1,.84282.136L4.64116,3.71165,8.44.136a.50018.50018,0,0,1,.68555.72852L4.98393,4.76243A.5001.5001,0,0,1,4.64116,4.89817Z"></path></svg>
@@ -64,7 +97,7 @@ const Accueil = () => {
                   </div>
                 </form>
 
-                <ContactForm />
+                {/* <ContactForm /> */}
 
               </div>
             </div>

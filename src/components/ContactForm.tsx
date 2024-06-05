@@ -1,7 +1,8 @@
+
 import { useState } from "react";
 
 //Contact.js//
-const encode = (data: { [x: string]: string | number | boolean; }) => {
+  const encode = (data: { [x: string]: string | number | boolean; }) => {
     return Object.keys(data)
      .map((key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
      .join("&");
@@ -25,15 +26,17 @@ const encode = (data: { [x: string]: string | number | boolean; }) => {
     };
    const handleChange = (e: { target: { name: any; value: any; }; }) => {
      const { name, value } = e.target;
+     
      setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-     }));
+       ...prevData,
+       [name]: value,
+      }));
+      console.log(formData);
     };
     return (
      <div>
       <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit} method="post" data-netlify='true' name="contact">
+      <form onSubmit={handleSubmit} method="post" name="contact">
       <input type="hidden" name="form-name" value="contact" />
       <div>
        <label htmlFor="name">Name</label>
