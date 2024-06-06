@@ -10,6 +10,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
    };
    
    type FormInputs = {
+    champ: string;
     name: string;
     email: string;
     situation: string;
@@ -46,7 +47,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
     return (
       <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
       <input type="hidden" name="form-name" value="contact"/>
-      <input type="hidden" name="champ"/>
+      <input type="hidden" id="champ" {...register("champ")}/>
 
         <div>
           <label htmlFor="name" className="font-medium">Nom *</label>
