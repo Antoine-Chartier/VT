@@ -12,12 +12,16 @@ import { useForm, SubmitHandler } from "react-hook-form"
    type FormInputs = {
     name: string;
     email: string;
-    city: string;
     situation: string;
+    city: string;
+    destination: string;
+    autre: string;
   };
 
    const ContactForm = () => {
-    const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, setError, reset } = useForm<FormInputs>();
+    const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, setError, reset, watch } = useForm<FormInputs>();
+    const situation = watch('situation');
+
 
     const onSubmit: SubmitHandler<FormInputs> = async (data) => {
       console.log(data);
@@ -54,10 +58,6 @@ import { useForm, SubmitHandler } from "react-hook-form"
           {errors.email && <span className="text-red-500">{errors.email.message}</span>}
         </div>
         <div>
-          <label htmlFor="city" className="font-medium">Ville</label>
-          <input type="text" id="city" {...register("city")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
-        </div>
-        <div>
           <label htmlFor="situation" className="font-medium">Votre situation</label>
           <div className="flex relative mt-2">
             <select id="situation" {...register("situation")}  className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
@@ -71,6 +71,24 @@ import { useForm, SubmitHandler } from "react-hook-form"
             </div>
           </div>
         </div>
+        {situation === 'proprietaire' && (
+        <div>
+          <label htmlFor="city" className="font-medium">Ville de la propriété</label>
+          <input type="text" id="city" {...register("city")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+        </div>
+        )}
+        {situation === 'vacancier' && (
+        <div>
+          <label htmlFor="destination" className="font-medium">Ville souhaité</label>
+          <input type="text" id="destination" {...register("destination")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+        </div>
+        )}
+        {situation === 'autre' && (
+        <div>
+          <label htmlFor="autre" className="font-medium">Préciser votre demande</label>
+          <textarea rows={3} id="autre" {...register("autre")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
+        </div>
+        )}
         { errors.root && <span className="text-red-500">{errors.root.message}</span>}
         { isSubmitSuccessful && <span className="text-green-500">Merci pour votre intérêt, nous vous contacterons sous peu.</span>}
         <div className="flex justify-center my-7">
