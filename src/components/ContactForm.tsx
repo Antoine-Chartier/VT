@@ -46,6 +46,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
     return (
       <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
       <input type="hidden" name="form-name" value="contact"/>
+      <input type="hidden" name="champ"/>
 
         <div>
           <label htmlFor="name" className="font-medium">Nom *</label>
@@ -79,7 +80,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
         )}
         {situation === 'vacancier' && (
         <div>
-          <label htmlFor="destination" className="font-medium">Ville souhaité</label>
+          <label htmlFor="destination" className="font-medium">Ville souhaitée</label>
           <input type="text" id="destination" {...register("destination")}  className="mt-2 block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 pl-5" />
         </div>
         )}
