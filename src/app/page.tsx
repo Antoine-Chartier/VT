@@ -5,16 +5,16 @@ import ContactForm from "@/components/ContactForm";
 const Accueil = () => {
   return (
     <>
-        <div className="w-full h-screen absolute top-0">
-          <Image
-            src="/images/Parc-national-du-Mont-Tremblant.jpg"
-            alt="hero image du Mont-Tremblant l'été"
-            fill
-            className="object-cover z-0"
-            priority={true}
-          />
-        </div>
-      <AppLayout >
+      <div className="w-full h-screen absolute top-0">
+        <Image
+          src="/images/Parc-national-du-Mont-Tremblant.jpg"
+          alt="hero image du Mont-Tremblant l'été"
+          fill
+          className="object-cover z-0"
+          priority={true}
+        />
+      </div>
+      <AppLayout>
         <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
           <h1 className="text-5xl bg-main inline">
             Une saison à la hauteur de vos attentes
@@ -45,7 +45,9 @@ const Accueil = () => {
 
         <section className="relative mt-24 md:p-main-clamp">
           <div>
-              <h1 className="text-center md:text-left text-2xl md:text-4xl my-4 md:my-8 h-full">Clients Satisfaits</h1>
+            <h1 className="text-center md:text-left text-2xl md:text-4xl my-4 md:my-8 h-full">
+              Clients Satisfaits
+            </h1>
             <div className="flex flex-col gap-4 md:flex-row">
               <div className="bg-secondary p-10 flex-1">
                 <div className="w-24 h-10">
@@ -64,8 +66,14 @@ const Accueil = () => {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="text-2xl mb-4 mt-5">« Des vacances parfaites! »</h2>
-                  <p className="my-4">« J'ai passé un séjour incroyable dans l'un des chalets de Viva Tremblant. Les services étaient impeccables et l'équipe était très professionnelle. »</p>
+                  <h2 className="text-2xl mb-4 mt-5">
+                    « Des vacances parfaites! »
+                  </h2>
+                  <p className="my-4">
+                    « J'ai passé un séjour incroyable dans l'un des chalets de
+                    Viva Tremblant. Les services étaient impeccables et l'équipe
+                    était très professionnelle. »
+                  </p>
                   <p className="">Sophie Dufort, QC</p>
                 </div>
               </div>
@@ -86,8 +94,14 @@ const Accueil = () => {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="text-2xl mb-4 mt-5">« Expérience inoubliable »</h2>
-                  <p className="my-4">« Les chalets de Viva Tremblant offrent une expérience de vacances inoubliable. Je recommande vivement leurs services. »</p>
+                  <h2 className="text-2xl mb-4 mt-5">
+                    « Expérience inoubliable »
+                  </h2>
+                  <p className="my-4">
+                    « Les chalets de Viva Tremblant offrent une expérience de
+                    vacances inoubliable. Je recommande vivement leurs services.
+                    »
+                  </p>
                   <p className="">Jean-François Bouchard, QC</p>
                 </div>
               </div>
@@ -108,8 +122,13 @@ const Accueil = () => {
                   </svg>
                 </div>
                 <div>
-                  <h2 className="text-2xl mb-4 mt-5">« Magnifique vue sur le lac! »</h2>
-                  <p className="my-4">« J'ai loué un condo avec une vue imprenable sur le lac. C'était comme vivre dans un rêve. »</p>
+                  <h2 className="text-2xl mb-4 mt-5">
+                    « Magnifique vue sur le lac! »
+                  </h2>
+                  <p className="my-4">
+                    « J'ai loué un condo avec une vue imprenable sur le lac.
+                    C'était comme vivre dans un rêve. »
+                  </p>
                   <p className="">Marc Dubois, ON</p>
                 </div>
               </div>
