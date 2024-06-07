@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from '@/lib/utils'
 import "../styles/globals.css";
+import { questrial } from "../lib/fonts";
+
 
 
 export const metadata: Metadata = {
@@ -47,11 +49,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
-
-
-
-        {children}
-        
+      <body className={`${questrial.className} flex flex-col min-h-screen bg-main`}>
+          {children}
+      </body>
     </html>
   );
 }

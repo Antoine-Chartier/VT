@@ -1,4 +1,4 @@
-import { inter, josefin_slab } from "../../lib/fonts";
+import { inter } from "../../lib/fonts";
 
 
 export default function RootLayout({

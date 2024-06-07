@@ -60,7 +60,7 @@ export default async function Post(params: Params) {
   return (
     <>
       <h1 className='[font-size:_clamp(1em,3vw,3em)] font-semibold '>{post.title}</h1>
-      <div className="hidden md:block md:mb-12 text-slate-600 dark:text-slate-400">
+      <div className="hidden md:block md:mb-12 text-slate-600">
         Écrit le <DateFormatter dateString={post.publishedAt} /> par{" "}
         {post?.author?.name || ""}.
       </div>

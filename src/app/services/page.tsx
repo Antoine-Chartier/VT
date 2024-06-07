@@ -1,9 +1,6 @@
-import Layout from "../../components/AppLayout";
+import AppLayout from "../../components/AppLayout";
 import { Metadata } from "next";
-import Head from "next/head";
-import Nav from "../../components/Nav";
-import Footer from "../../components/Footer";
-import { inter, josefin_slab } from "../../lib/fonts";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -12,11 +9,28 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <Layout>
-      <main className="flex-grow items-center justify-between p-24">
-        <div>nos services</div>
-      </main>
-    </Layout>
+    <AppLayout>
+      <div className="px-main-x-clamp">
+        <div className="flex justify-center text-xl md:text-6xl">Nos Services</div>
+
+        <div className="my-16">
+        <hr />
+          <div className="mx-5 my-10 flex">
+            <Image 
+              src={"/logoAirbnb.webp"}
+              alt="logo airbnb"
+              width={150}
+              height={150}
+              className="object-cover"
+            />
+            <div className="flex flex-col justify-center mx-10">
+              <h2 className="text-2xl">Création de fiche Airbnb complète</h2>
+            </div>
+          </div>
+        <hr />
+        </div>
+      </div>
+    </AppLayout>
   );    
 }
 

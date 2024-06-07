@@ -2,27 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-:root {
-  --foreground-color: #fefdf2;
-  --background-color: #161f15;
-  --secondary-color: #fdfab0;
-  --couleur-texte-hover: #536c50;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --foreground-color: white;
-    --background-color: black;
+    --main-color: hsl(55, 86%, 97%);
+    --secondary-color: hsl(58, 95%, 84%);
+    --background-color: #161f15;
+    --couleur-texte-hover: #536c50;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --main-color: #000000;
+      --secondary-color: #ffffff;
+    }
   }
 }
-}
-
 
 @layer components {
-
 }
 
 @layer utilities {
-
 }

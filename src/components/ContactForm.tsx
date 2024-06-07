@@ -22,7 +22,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
    const ContactForm = () => {
     const { register, handleSubmit, formState: { errors, isSubmitSuccessful }, setError, reset, watch } = useForm<FormInputs>();
     const situation = watch('situation');
-
+    
 
     const onSubmit: SubmitHandler<FormInputs> = async (data) => {
       console.log(data);
@@ -45,7 +45,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
      }
    };
     return (
-      <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit(onSubmit)} method="post" name="contact" className="flex flex-col gap-5">
       <input type="hidden" name="form-name" value="contact"/>
       <input type="hidden" id="champ" {...register("champ")}/>
 
