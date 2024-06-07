@@ -1,17 +1,19 @@
 import Image from "next/image";
 import AppLayout from "@/components/AppLayout";
 import ContactForm from "@/components/ContactForm";
+import imgHero from "/public/images/Parc-national-du-Mont-Tremblant.jpg";
 
 const Accueil = () => {
   return (
     <>
       <div className="w-full h-screen absolute top-0">
         <Image
-          src="/images/Parc-national-du-Mont-Tremblant.jpg"
+          src={imgHero}
           alt="hero image du Mont-Tremblant l'été"
           fill
           className="object-cover z-0"
           priority={true}
+          placeholder="blur"
         />
       </div>
       <AppLayout>
