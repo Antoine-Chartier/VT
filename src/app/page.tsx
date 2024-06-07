@@ -13,7 +13,6 @@ const Accueil = () => {
           fill
           className="object-cover z-0"
           priority={true}
-          placeholder="blur"
         />
       </div>
       <AppLayout>
