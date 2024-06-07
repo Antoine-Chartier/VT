@@ -70,8 +70,8 @@ const Accueil = () => {
                     « Des vacances parfaites! »
                   </h2>
                   <p className="my-4">
-                    « J'ai passé un séjour incroyable dans l'un des chalets de
-                    Viva Tremblant. Les services étaient impeccables et l'équipe
+                    « J&apos;ai passé un séjour incroyable dans l&apos;un des chalets de
+                    Viva Tremblant. Les services étaient impeccables et l&apos;équipe
                     était très professionnelle. »
                   </p>
                   <p className="">Sophie Dufort, QC</p>
@@ -126,8 +126,8 @@ const Accueil = () => {
                     « Magnifique vue sur le lac! »
                   </h2>
                   <p className="my-4">
-                    « J'ai loué un condo avec une vue imprenable sur le lac.
-                    C'était comme vivre dans un rêve. »
+                    « J&apos;ai loué un condo avec une vue imprenable sur le lac.
+                    C&apos;était comme vivre dans un rêve. »
                   </p>
                   <p className="">Marc Dubois, ON</p>
                 </div>

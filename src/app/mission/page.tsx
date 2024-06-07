@@ -40,7 +40,7 @@ const Mission = () => {
             au Mont-Tremblant, au cœur des Laurentides. Passionnés par la
             montagne et ses environs, nous sommes également amateurs de voyage
             et de découverte. <br />
-            <b>Notre mission</b> est d'aider les propriétaires et les locataires{" "}
+            <b>Notre mission</b> est d&apos;aider les propriétaires et les locataires{" "}
             <b>saisonniers</b> à trouver leur perle rare. Grâce à notre
             connaissance approfondie de la région et à notre engagement envers
             un service personnalisé, nous assurons à chacun une expérience
