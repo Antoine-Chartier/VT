@@ -2,7 +2,6 @@
 // src/theme.js
 if (typeof window !== "undefined") {
   window.addEventListener("load", () => {
-    console.log("theme.js loaded");
     if (
       localStorage.theme === "dark" ||
       (!("theme" in localStorage) &&
@@ -17,7 +16,6 @@ if (typeof window !== "undefined") {
 
 // Function to set theme to light
 export function setThemeLight() {
-  console.log("theme.js loaded");
 
   localStorage.theme = "light";
   document.body.classList.remove("dark");

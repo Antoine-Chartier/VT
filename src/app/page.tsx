@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 const Accueil = () => {
   return (
     <>
+      <AppLayout>
       <div className="w-full h-screen absolute top-0">
         <Image
           src="/images/Parc-national-du-Mont-Tremblant.jpg"
@@ -14,7 +15,6 @@ const Accueil = () => {
           priority={true}
         />
       </div>
-      <AppLayout>
         <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
           <h1 className="text-5xl bg-main inline">
             Une saison à la hauteur de vos attentes
