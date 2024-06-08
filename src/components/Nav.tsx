@@ -109,9 +109,9 @@ export default function Nav() {
                   <motion.div className="self-center"><Link href={"/mission"}>La mission</Link></motion.div>      
 
 
-                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeLight}>Clair</button></Link></motion.div>
-                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeDark}>Sombre</button></Link></motion.div>
-                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeSystem}>Systeme</button></Link></motion.div>
+                  <motion.div className="self-center"><button onClick={setThemeLight}>Clair</button></motion.div>
+                  <motion.div className="self-center"><button onClick={setThemeDark}>Sombre</button></motion.div>
+                  <motion.div className="self-center"><button onClick={setThemeSystem}>Systeme</button></motion.div>
                 </motion.div>
               </motion.div>
             )}

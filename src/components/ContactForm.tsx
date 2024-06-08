@@ -95,7 +95,7 @@ import { useForm, SubmitHandler } from "react-hook-form"
         { isSubmitSuccessful && <span className="text-green-500">Merci pour votre intérêt, nous vous contacterons sous peu.</span>}
         { !isSubmitSuccessful &&
         <div className="flex justify-center my-7">
-          <button type="submit"  className=" bg-slate-900 rounded-full p-4 w-1/2 ">
+          <button type="submit"  className=" bg-slate-900 text-main dark:text-text-primaryDarkMode rounded-full p-4 w-1/2 ">
             Envoyer
           </button>
         </div>
