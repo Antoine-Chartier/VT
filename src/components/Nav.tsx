@@ -1,4 +1,5 @@
 "use client"
+import { setThemeLight, setThemeDark, setThemeSystem } from '@/lib/theme';
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import SVGComponent from "./SVGComponent";
@@ -105,7 +106,12 @@ export default function Nav() {
                   className="flex flex-col gap-6 m-8"
                 >
                   <motion.div className="self-center"><Link href={"/services"}>Services</Link></motion.div>
-                  <motion.div className="self-center"><Link href={"/mission"}>La mission</Link></motion.div>
+                  <motion.div className="self-center"><Link href={"/mission"}>La mission</Link></motion.div>      
+
+
+                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeLight}>Clair</button></Link></motion.div>
+                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeDark}>Sombre</button></Link></motion.div>
+                  <motion.div className="self-center"><Link href={"/mission"}><button onClick={setThemeSystem}>Systeme</button></Link></motion.div>
                 </motion.div>
               </motion.div>
             )}

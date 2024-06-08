@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 const Accueil = () => {
   return (
     <>
-      <div className="w-full h-screen absolute top-0">
+      {/* <div className="w-full h-screen absolute top-0">
         <Image
           src="/images/Parc-national-du-Mont-Tremblant.jpg"
           alt="hero image du Mont-Tremblant l'été"
@@ -13,7 +13,7 @@ const Accueil = () => {
           className="object-cover z-0"
           priority={true}
         />
-      </div>
+      </div> */}
       <AppLayout>
         <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
           <h1 className="text-5xl bg-main inline">
@@ -28,7 +28,7 @@ const Accueil = () => {
           </div>
         </div>
 
-        <section className="relative z-20 mt-16 px-main-x-clamp">
+        <section className="relative z-20 mt-16 px-main-x-clamp dark:text-text-primaryDarkMode">
           <div className="bg-secondary rounded-xl px-4 py-10 md:w-1/2 md:min-w-96 2xl:w-2/5 ml-auto">
             <div>
               <h1 className="text-center text-3xl text-pretty leading-10 xl:mx-24">
@@ -48,7 +48,7 @@ const Accueil = () => {
             <h1 className="text-center md:text-left text-2xl md:text-4xl my-4 md:my-8 h-full">
               Clients Satisfaits
             </h1>
-            <div className="flex flex-col gap-4 md:flex-row">
+            <div className="flex flex-col gap-4 md:flex-row dark:text-text-primaryDarkMode">
               <div className="bg-secondary p-10 flex-1">
                 <div className="w-24 h-10">
                   <svg

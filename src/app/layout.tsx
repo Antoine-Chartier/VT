@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { absoluteUrl } from '@/lib/utils'
 import "../styles/globals.css";
-import { questrial } from "../lib/fonts";
+import { questrial } from "@/lib/fonts";
 
 
 
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         media: '(prefers-color-scheme: light)',
       },
       {
-        url: '/favicon.ico',
+        url: '/favicon/favicon.ico',
         media: '(prefers-color-scheme: dark)',
       },
     ],
@@ -47,9 +47,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="fr">
-      <body className={`${questrial.className} flex flex-col min-h-screen bg-main`}>
+      <body className={`${questrial.className} flex flex-col min-h-screen bg-main text-text-primary`}>
           {children}
       </body>
     </html>

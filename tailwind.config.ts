@@ -7,14 +7,15 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  // darkMode: 'class', // pour activer le mode sombre
+  darkMode: 'selector', // pour activer le mode sombre
   theme: {
     extend: {
       colors: {
         main: "var(--main-color)",
         secondary: "var(--secondary-color)",
         text: {
-          primary: "#161f15",
+          primary: "var(--text-color)",
+          primaryDarkMode: "var(--text-color-dark-mode)",
           primaryHover: "var(--couleur-texte-hover)",
         },
         // colors for light theme
