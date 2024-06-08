@@ -51,9 +51,7 @@ export default function RootLayout({
 
   return (
     <html lang="fr">
-      <body className={`${questrial.className} flex flex-col min-h-screen bg-main text-text-primary`}>
           {children}
-      </body>
     </html>
   );
 }
