@@ -1,10 +1,11 @@
 import Footer from "./Footer";
 import Nav from "./Nav";
 
-
  const AppLayout =  ({
   children,
 }: Readonly<{ children: React.ReactNode }>) => {
+  
+  
   return (
     <>
       <Nav />
