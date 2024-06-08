@@ -5,7 +5,7 @@ import ContactForm from "@/components/ContactForm";
 const Accueil = () => {
   return (
     <>
-      {/* <div className="w-full h-screen absolute top-0">
+      <div className="w-full h-screen absolute top-0">
         <Image
           src="/images/Parc-national-du-Mont-Tremblant.jpg"
           alt="hero image du Mont-Tremblant l'été"
@@ -13,7 +13,7 @@ const Accueil = () => {
           className="object-cover z-0"
           priority={true}
         />
-      </div> */}
+      </div>
       <AppLayout>
         <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
           <h1 className="text-5xl bg-main inline">
