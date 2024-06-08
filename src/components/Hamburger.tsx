@@ -28,7 +28,7 @@ export default function Hamburger({ isOpen }: HamburgerProps) {
                     width: 2rem;
                     height: 0.25rem;
                     border-radius: 10px;
-                    background-color: black;
+                    background-color: var(--text-color);
                     transform-origin: 1px;
                     transition: all 0.1s linear;
                 }

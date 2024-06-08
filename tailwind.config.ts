@@ -18,26 +18,7 @@ const config: Config = {
           primaryDarkMode: "var(--text-color-dark-mode)",
           primaryHover: "var(--couleur-texte-hover)",
         },
-        // colors for light theme
-        // light: {
-        //   main: "var(--foreground-color)",
-        //   secondary: "var(--secondary-color)",
-        //   text: {
-        //     primary: '#161f15',
-        //     primaryHover: '#536c50',
-        //   },
-        //   // other colors...
-        // },
-        // // colors for dark theme
-        // dark: {
-        //   main: "var(--foreground-color)",
-        //   secondary: "var(--background-color)",
-        //   text: {
-        //     primary: '#f7fafc',
-        //     primaryHover: '#a0aec0',
-        //   },
-        //   // other colors...
-        // },
+
       },
       padding: {
         "main-clamp": "clamp(1em,5vw,10em) clamp(1em,6vw,10em)",
