@@ -1,7 +1,6 @@
 import { Metadata } from "next";
-import Footer from "../../components/Footer";
-import Nav from "../../components/Nav";
-import AppLayout from "../../components/AppLayout";
+import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
 
 export const metadata: Metadata = {
   title: "Contactez-nous",
@@ -13,7 +12,7 @@ const Contact = () => {
 
 
   return (
-         <AppLayout> 
+          <>
               <div>nous contacter</div>
               <div>nous contacter</div>
               <div>nous contacter</div>
@@ -57,7 +56,8 @@ const Contact = () => {
               <div>nous contacter</div>
               <div>nous contacter</div>
               <div>nous contacter</div>
-         </AppLayout>
+            </>
+
   );    
 }
 

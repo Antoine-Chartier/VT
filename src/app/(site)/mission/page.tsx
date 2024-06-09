@@ -1,4 +1,3 @@
-import AppLayout from "@/components/AppLayout";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -9,7 +8,7 @@ export const metadata: Metadata = {
 
 const Mission = () => {
   return (
-    <AppLayout>
+    <>
       <div className="px-main-x-clamp mb-9">
         <h1 className="flex justify-center text-xl md:text-6xl">
           À Propos de Nous
@@ -22,7 +21,7 @@ const Mission = () => {
           fill
           className="md:px-main-x-clamp object-cover"
           priority={true}
-        />
+          />
       </div>
       <div className="mb-9 md:my-20 flex flex-col-reverse md:flex-row md:px-main-x-clamp">
         <div className="relative w-full h-[_clamp(13em,33vw,25em)]">
@@ -31,7 +30,7 @@ const Mission = () => {
             alt="iamge de nous"
             fill
             className="object-cover"
-          />
+            />
         </div>
         <div className="px-main-x-clamp my-10">
           <h2 className="text-lg md:text-4xl my-4">Qui Nous Sommes</h2>
@@ -48,7 +47,7 @@ const Mission = () => {
           </p>
         </div>
       </div>
-    </AppLayout>
+    </>
   );
 };
 

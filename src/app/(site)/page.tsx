@@ -1,11 +1,9 @@
 import Image from "next/image";
-import AppLayout from "@/components/AppLayout";
 import ContactForm from "@/components/ContactForm";
 
 const Accueil = () => {
   return (
     <>
-      <AppLayout>
       <div className="w-full h-screen absolute top-0">
         <Image
           src="/images/Parc-national-du-Mont-Tremblant.jpg"
@@ -135,7 +133,6 @@ const Accueil = () => {
             </div>
           </div>
         </section>
-      </AppLayout>
     </>
   );
 };

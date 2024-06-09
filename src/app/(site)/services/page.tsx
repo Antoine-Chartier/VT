@@ -1,4 +1,3 @@
-import AppLayout from "../../components/AppLayout";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -9,7 +8,6 @@ export const metadata: Metadata = {
 
 const Services = () => {
   return (
-    <AppLayout>
       <div className="px-main-x-clamp">
         <div className="flex justify-center text-xl md:text-6xl">Nos Services</div>
 
@@ -30,7 +28,6 @@ const Services = () => {
         <hr />
         </div>
       </div>
-    </AppLayout>
   );    
 }
 
