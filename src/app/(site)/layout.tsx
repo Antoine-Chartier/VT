@@ -3,18 +3,22 @@ import Nav from "../../components/Nav";
 import { questrial } from "@/lib/fonts";
 import { Providers } from "@/app/providers";
 
-const AppLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
+
+ const AppLayout =  ({
+  children,
+}: Readonly<{ children: React.ReactNode }>) => {
+  
+  
   return (
-    <body
-      className={`${questrial.className} flex flex-col min-h-screen bg-main text-text-primary`}
-    >
+    <body className={`${questrial.className} flex flex-col min-h-screen bg-main text-text-primary`}>
       <Providers>
-        <Nav />
+      <Nav />
       </Providers>
-      <main className="bg-inherit flex-grow">{children}</main>
+        <main className="bg-inherit flex-grow">{children}</main>
       <Footer />
     </body>
   );
-};
+}
 
 export default AppLayout;
+
