@@ -15,8 +15,9 @@ const config: Config = {
         secondary: "var(--secondary-color)",
         text: {
           primary: "var(--text-color)",
-          primaryDarkMode: "var(--text-color-dark-mode)",
+          primaryActive: "var(--text-color-active)",
           primaryHover: "var(--couleur-texte-hover)",
+          primaryDarkMode: "var(--text-color-dark-mode)",
         },
 
       },
