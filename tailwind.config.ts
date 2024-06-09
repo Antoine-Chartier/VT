@@ -7,7 +7,7 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: 'selector', // pour activer le mode sombre
+  darkMode: 'class', // pour activer le mode sombre
   theme: {
     extend: {
       colors: {
