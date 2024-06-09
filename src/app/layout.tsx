@@ -50,7 +50,7 @@ export default function RootLayout({
 
 
   return (
-    <html lang="fr" suppressHydrationWarning>
+    <html lang="fr" suppressHydrationWarning> 
           {children}
     </html>
   );
