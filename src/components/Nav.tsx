@@ -15,9 +15,9 @@ import {
 } from "framer-motion";
 import ThemeSwitch from './ThemeSwitch';
 
+
 export default function Nav() {
   const pathname = usePathname();
-  
   
   const [hidden, setHidden] = useState(false);
   const { scrollY } = useScroll();

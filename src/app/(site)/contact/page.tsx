@@ -10,9 +10,6 @@ export const metadata: Metadata = {
 const Contact = () => {
   const cookieStore = cookies();
   const theme = cookieStore.get("theme");
-  // console.log(theme);
-
-  // console.log("contact");
   return (
     <>
       <div>nous contacter</div>
