@@ -15,8 +15,13 @@ const ThemeContext = createContext<ThemeContextType>({theme: 'light', setTheme: 
 
 
 export const ThemeProviderV3: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [theme, setTheme] = useState<Theme>('light');
-    
+  const [theme, setTheme] = useState<Theme>(() => {
+    if (typeof window !== 'undefined') {
+      const storedTheme = window.localStorage.getItem('theme') as Theme;
+      return storedTheme || 'light';
+    }
+    return 'light';
+  });
       // On mount, read the preferred theme from the persistence layer (e.g., local storage)
   useEffect(() => {
     console.log("c quoi le theme ici ? ", theme);
