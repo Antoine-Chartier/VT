@@ -2,6 +2,8 @@ import Footer from "../../components/Footer";
 import Nav from "../../components/Nav";
 import { questrial } from "@/lib/fonts";
 // import { Providers } from "@/app/providers";
+import { ThemeProviderV3 } from "@/components/Theme-providerV3";
+
 
 const AppLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
   return (
@@ -9,7 +11,9 @@ const AppLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
       className={`${questrial.className} flex flex-col min-h-screen bg-main text-text-primary`}
     >
       {/* <Providers> */}
+      <ThemeProviderV3>
         <Nav />
+      </ThemeProviderV3>
       {/* </Providers> */}
       <main className="bg-inherit flex-grow">{children}</main>
       <Footer />
