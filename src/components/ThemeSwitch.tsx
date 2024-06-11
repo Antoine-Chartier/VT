@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { useTheme } from 'next-themes'
+// import { useTheme } from 'next-themes'
 import Image from "next/image"
 import { useThemeV3 } from "./Theme-providerV3";
 
