@@ -81,7 +81,7 @@ export default function Nav() {
             </Link>
           </div>
                     <div className="md:flex gap-8 hidden">
-                      <div className="flex flex-col justify-center mt-1"><Link className={pathname.startsWith("/contact") ? 'text-text-primaryActive' : ''} href={"/contact"}>Contact</Link></div>
+                      {/* <div className="flex flex-col justify-center mt-1"><Link className={pathname.startsWith("/contact") ? 'text-text-primaryActive' : ''} href={"/contact"}>Contact</Link></div> */}
                       <div className="flex flex-col justify-center mt-1"><Link className={pathname.startsWith("/services") ? 'text-text-primaryActive' : ''} href={"/services"}>Services</Link></div>
                       <div className="flex flex-col justify-center mt-1"><Link  className={pathname.startsWith("/mission") ? 'text-text-primaryActive' : ''} href={"/mission"}>La mission</Link></div>
                       <div className="flex flex-col justify-center mt-1"><ThemeSwitch /></div>
