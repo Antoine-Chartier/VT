@@ -16,7 +16,7 @@ const Mission = () => {
       </div>
       <div className="relative w-full h-[_clamp(15em,35vw,30em)] mb-9">
         <Image
-          src={"/paysage2.jpg"}
+          src={"/paysageHiver.jpg"}
           alt="une image aérienne photoréaliste d'une ancienne forêt verdoyante parsemée de petites montagnes et de lacs."
           fill
           className="md:px-main-x-clamp object-cover"
