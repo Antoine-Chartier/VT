@@ -63,10 +63,10 @@ import { useForm, SubmitHandler } from "react-hook-form"
           <label htmlFor="situation" className="font-medium">Votre situation</label>
           <div className="flex relative mt-2">
             <select id="situation" {...register("situation")}  className=" block w-full rounded-md border border-solid border-gray-500 bg-inherit min-h-11 p-1 px-5 appearance-none">
-              <option value="">...</option>
-              <option value="proprietaire">Propriétaire</option>
-              <option value="vacancier">Vacancier</option>
-              <option value="autre">Autre</option>
+              <option value="" className="bg-main">...</option>
+              <option value="proprietaire" className="bg-main">Propriétaire</option>
+              <option value="vacancier" className="bg-main">Vacancier</option>
+              <option value="autre" className="bg-main">Autre</option>
             </select>
             <div className="flex absolute top-0 right-5 w-3 h-full">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.2828 4.89817" aria-hidden="true"><path d="M4.64116,4.89817a.5001.5001,0,0,1-.34277-.13574L.15727.86448A.50018.50018,0,0,1,.84282.136L4.64116,3.71165,8.44.136a.50018.50018,0,0,1,.68555.72852L4.98393,4.76243A.5001.5001,0,0,1,4.64116,4.89817Z"></path></svg>
