@@ -47,14 +47,14 @@ const Accueil = () => {
 
       {/* // Revenu Potentiel */}
       <section className="mt-28 md:p-main-clamp">
-        <div>
+        <div className="my-80">
           <h1 className="text-3xl md:text-3xl lg:text-6xl p-main-clamp md:px-0 lg:py-18 h-full">
             Revenu potentiel
           </h1>
           <div className="flex flex-col gap-4 md:flex-row dark:text-text-primaryDarkMode">
             <div className="bg-secondary p-main-clamp lg:p-16 flex-1">
               <div className="mb-7 text-4xl xl:text-5xl ">
-                <h2>1 chambre </h2>
+                <h2 className="text-3xl">1 chambre </h2>
               </div>
               <div>
                 <p>À partir de:</p>
@@ -69,7 +69,7 @@ const Accueil = () => {
 
             <div className="bg-secondary p-main-clamp lg:p-16 flex-1">
               <div className="mb-7 text-4xl xl:text-5xl ">
-                <h2>2 chambres </h2>
+                <h2 className="text-3xl">2 chambres </h2>
               </div>
               <div>
                 <p>À partir de:</p>
@@ -84,7 +84,7 @@ const Accueil = () => {
 
             <div className="bg-secondary p-main-clamp lg:p-16 flex-1">
               <div className="mb-7 text-4xl xl:text-5xl ">
-                <h2>3 chambres et +</h2>
+                <h2 className="text-3xl">3 chambres et +</h2>
               </div>
               <div>
                 <p>À partir de:</p>
