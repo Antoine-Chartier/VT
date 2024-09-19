@@ -11,7 +11,7 @@ const AppLayout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
       <Providers>
         <Nav />
       </Providers>
-      <main className="bg-inherit flex-grow">{children}</main>
+      <main className="bg-inherit">{children}</main>
       <Footer />
     </body>
   );
