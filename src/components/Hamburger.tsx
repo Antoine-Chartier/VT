@@ -12,7 +12,7 @@ export default function Hamburger({ isOpen }: HamburgerProps) {
                 <div className="burger burger2"></div>
             </div>
 
-            <style jsx>{`
+            <style>{`
 
                 .hamburger {
                     position: relative;

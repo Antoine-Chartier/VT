@@ -4,26 +4,31 @@ import ContactForm from "@/components/ContactForm";
 const Accueil = () => {
   return (
     <>
-      <div className="w-full h-screen absolute top-0">
-        <Image
-          src="/chaletHiverGenerique.webp"
-          alt="hero image du Mont-Tremblant l'été"
-          fill
-          className="object-cover z-0"
-          priority={true}
-        />
-      </div>
+
+      <div className="h-screen">
+        {/* image hero */}
+        <div className="w-full h-screen absolute top-0">
+          <Image
+            src="/chaletHiverGenerique.webp"
+            alt="hero image du Mont-Tremblant l'été"
+            fill
+            className="object-cover z-0"
+            priority={true}
+          />
+        </div>
+        {/* Text hero */}
         <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
           <h1 className="text-5xl bg-main inline">
-            Recherche condo / chalet à louer cet hiver. <br/> Location pour la saison.
+            Recherche condo / chalet à louer cet hiver. <br /> Location pour la
+            saison.
           </h1>
           <div className="md:w-1/3 mt-3 text-center md:text-left">
             <p className="text-2xl bg-main inline">
-            Revenu à la hauteur de vos attentes.
+              Revenu à la hauteur de vos attentes.
             </p>
           </div>
         </div>
-
+        {/* Form hero */}
         <section className="relative z-20 mt-16 px-main-x-clamp dark:text-text-primaryDarkMode">
           <div className="bg-secondary rounded-xl px-4 py-10 md:w-1/2 md:min-w-96 2xl:w-2/5 ml-auto">
             <div>
@@ -32,88 +37,81 @@ const Accueil = () => {
               </h1>
               <h2 className="text-center leading-8">Contactez-nous</h2>
             </div>
-
             <div className="mt-10 md:mx-5 xl:10">
               <ContactForm />
             </div>
           </div>
         </section>
+      </div>
 
-        <section className="mt-24 md:p-main-clamp">
-          <div>
-            <h1 className="text-center md:text-left text-2xl md:text-4xl my-4 md:my-8 h-full">
-              Revenu potentiel
-            </h1>
-            <div className="flex flex-col gap-4 md:flex-row dark:text-text-primaryDarkMode">
-
-              <div className="bg-secondary p-10 flex-1">
-                <div className="mb-7 text-4xl xl:text-5xl ">
-                  <h2 >1 chambre </h2>
-                </div>
-                <div><p>
-                  À partir de:  
-                </p></div>
-                <div>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    7 500$ - <b>10 000$</b> / saison hivernale
-                  </h2>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    5 000$ / saison estivale
-                  </h2>
-                </div>
+      {/* // Revenu Potentiel */}
+      <section className="mt-24 md:p-main-clamp">
+        <div>
+          <h1 className="text-2xl md:text-4xl my-4 md:my-8 h-full">
+            Revenu potentiel
+          </h1>
+          <div className="flex flex-col gap-4 md:flex-row dark:text-text-primaryDarkMode">
+            <div className="bg-secondary p-10 flex-1">
+              <div className="mb-7 text-4xl xl:text-5xl ">
+                <h2>1 chambre </h2>
               </div>
-
-              <div className="bg-secondary p-10 flex-1">
-                <div className="mb-7 text-4xl xl:text-5xl ">
-                  <h2 >2 chambres </h2>
-                </div>
-                <div><p>
-                  À partir de:  
-                </p></div>
-                <div>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    <b>12 000$</b> / saison hivernale
-                  </h2>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    7 000$ / saison estivale
-                  </h2>
-                </div>
+              <div>
+                <p>À partir de:</p>
               </div>
-
-              <div className="bg-secondary p-10 flex-1">
-                <div className="mb-7 text-4xl xl:text-5xl ">
-                  <h2 >3 chambres et +</h2>
-                </div>
-                <div><p>
-                  À partir de:  
-                </p></div>
-                <div>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    14 000$ - <b>20 000$</b> / saison hivernale
-                  </h2>
-                  <h2 className="text-2xl mb-4 mt-5">
-                    10 000$ / saison estivale
-                  </h2>
-                </div>
+              <div>
+                <h2 className="text-2xl mb-4 mt-5">
+                  7 500$ - <b>10 000$</b> / saison hivernale
+                </h2>
+                <h2 className="text-2xl mb-4 mt-5">5 000$ / saison estivale</h2>
               </div>
+            </div>
 
+            <div className="bg-secondary p-10 flex-1">
+              <div className="mb-7 text-4xl xl:text-5xl ">
+                <h2>2 chambres </h2>
+              </div>
+              <div>
+                <p>À partir de:</p>
+              </div>
+              <div>
+                <h2 className="text-2xl mb-4 mt-5">
+                  <b>12 000$</b> / saison hivernale
+                </h2>
+                <h2 className="text-2xl mb-4 mt-5">7 000$ / saison estivale</h2>
+              </div>
+            </div>
+
+            <div className="bg-secondary p-10 flex-1">
+              <div className="mb-7 text-4xl xl:text-5xl ">
+                <h2>3 chambres et +</h2>
+              </div>
+              <div>
+                <p>À partir de:</p>
+              </div>
+              <div>
+                <h2 className="text-2xl mb-4 mt-5">
+                  14 000$ - <b>20 000$</b> / saison hivernale
+                </h2>
+                <h2 className="text-2xl mb-4 mt-5">
+                  10 000$ / saison estivale
+                </h2>
+              </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <div className="relative w-full h-96 p-main-clamp md:pt-28">
+      <div className="relative w-full h-96 p-main-clamp md:pt-28">
         <Image
-         src={"/log-cabin-aFrame-drawing.jpg"}
+          src={"/log-cabin-aFrame-drawing.jpg"}
           alt="image d'un chalet"
           width={338}
           height={338}
           className="object-cover m-auto md:m-0"
         />
-        </div>
+      </div>
 
-
-
-        {/* <section className="relative mt-24 md:p-main-clamp">
+      {/* <section className="relative mt-24 md:p-main-clamp">
           <div>
             <h1 className="text-center md:text-left text-2xl md:text-4xl my-4 md:my-8 h-full">
               Clients Satisfaits
