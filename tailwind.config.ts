@@ -22,10 +22,14 @@ const config: Config = {
 
       },
       padding: {
-        "main-clamp": "clamp(1em,5vw,10em) clamp(1em,6vw,10em)",
-        "main-x-clamp": "clamp(1em,6vw,10em)",
-        "main-y-clamp": "clamp(1em,5vw,10em)",
+        "main-clamp": "clamp(1rem,5vw,10em) clamp(1rem,6vw,10em)",
+        // "main-clamp": "40px",
+        "main-x-clamp": "clamp(1rem,6vw,10rem)",
+        "main-y-clamp": "clamp(1rem,5vw,10rem)",
       },
+      screens: {
+        xs: '504px'
+      }
     },
   },
   plugins: [require("@tailwindcss/typography")],
