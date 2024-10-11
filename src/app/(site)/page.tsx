@@ -17,13 +17,13 @@ const Accueil = () => {
       </div>
 
       {/* Text hero */}
-      <div className="relative z-20 text-center md:text-left mt-16  sm:px-main-x-clamp">
-        <h1 className="text-5xl bg-main inline">
+      <div className="relative z-20 text-center text-pretty mt-16 sm:px-main-x-clamp md:text-left">
+        <h1 className="prose text-5xl lg:text-6xl lg:leading-relaxed bg-main inline">
           Recherche condo / chalet à louer cet hiver. <br /> Location pour la
           saison.
         </h1>
-        <div className="md:w-1/3 mt-3 text-center md:text-left">
-          <p className="text-2xl bg-main inline">
+        <div className="mt-3 text-center md:w-1/3 md:text-left">
+          <p className="text-2xl lg:text-3xl lg:leading-relaxed bg-main inline">
             Revenu à la hauteur de vos attentes.
           </p>
         </div>
